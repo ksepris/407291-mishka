@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="top-header">
+        <a class="top-header__logo">
+          <img class="top-header__logo-image" src="source/img/logotype-mobile.png" width="86" height="35" alt="Мишка">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="#">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item">
+                <form action="https://echo.htmlacademy.ru" method="get">
+                  <input type="text" class="user-list__search" name="search" placeholder="Поиск по сайту">
+                  <label class="top_search_label"></label>
+                </form>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__basket" href="#">Корзина</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="bottom-header">
+        <h1 class="bottom-header__title">Вязание на заказ</h1>
+      </div>
+    </header>
+    <main class="page-main">
+      <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="order-descr">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
+          чтобы уточнить детали.
+        </div>
+        <div class="order-types">
+          <h2 class="order-types__title">Тип</h2>
+          <label class="order-types__item">
+            <input type="radio" name="type" value="interior" id="interior" checked>
+            <span class="radio_indicator"></span>
+          Аксессуар для интерьера
+          </label>
+          <label class="order-types__item">
+            <input type="radio" name="type" value="toy" id="toy">
+            <span class="radio_indicator"></span>
+            Детская игрушка
+          </label>
+        </div>
+        <div class="order-colors">
+          <h2 class="order-colors__title">Цвет</h2>
+          <label class="order-colors__item">
+            <input type="checkbox" class="checkbox" name="color" value="Белый" id="white" checked>
+            <span class="checkbox_indicator"></span>
+            Белый
+          </label>
+          <label class="order-colors__item">
+            <input type="checkbox" class="checkbox" name="color" value="Серый" id="grey" checked>
+            <span class="checkbox_indicator"></span>
+            Серый
+          </label>
+          <label class="order-colors__item">
+            <input type="checkbox" class="checkbox" name="color" value="Тиффани" id="tiffany" checked>
+            <span class="checkbox_indicator"></span>
+            «Тиффани»
+          </label>
+          <label class="order-colors__item">
+            <input type="checkbox" class="checkbox" name="color" value="Черный" id="black" checked>
+            <span class="checkbox_indicator"></span>
+            Черный
+          </label>
+          <label class="order-colors__item">
+            <input type="checkbox" class="checkbox" name="color" value="Розовый" id="pink" checked>
+            <span class="checkbox_indicator"></span>
+            Розовый
+          </label>
+          <label class="order-colors__item">
+            <input type="checkbox" class="checkbox" name="color" value="Оранжевый" id="orange" checked>
+            <span class="checkbox_indicator"></span>
+            Оранжевый
+          </label>
+        </div>
+        <div class="order-customer">
+          <h2 class="order-customer__title"></h2>
+          <div class="order-customer__item">
+            <label>Имя:
+              <input class="order-customer__name" type="text" name="name" placeholder="Введите ваше имя*">
+            </label>
+          </div>
+          <div class="order-customer__item">
+            <label>Фамилия:
+              <input class="order-customer__surname" type="text" name="surname" placeholder="Укажите фамилию*">
+            </label>
+          </div>
+          <div class="order-customer__item">
+            <label>Отчество:
+              <input class="order-customer__fathername" type="text" name="fathername" placeholder="Отчество, если желаете">
+            </label>
+          </div>
+        </div>
+        <div class="order-phone">
+          <h2 class="order-phone__title">Тел</h2>
+          <label>Тел
+            <input class="order-phone__number" type="text" name="phone" placeholder="+7 XXX XX XX*">
+          </label>
+        </div>
+        <div class="order-email">
+          <h2 class="order-email__title">E-mail</h2>
+          <label>E-mail
+            <input class="order-email__address" type="text" name="email" placeholder="Ваш email*">
+          </label>
+        </div>
+        <div class="order-extra">
+          <h2 class="order-extra__title">Доп</h2>
+          <input class="order-extra__text" type="text" name="extra" placeholder="Опишите все ваши пожелания к заказу">
+        </div>
+        <span class="order-star">*Поля обязательны для заполнения</span>
+        <input type="submit" class="order-submit button" value="Отправить заказ">
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--inst" href="#">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        Разработано
+      </div>
+    </footer>
+  </body>
+</html>
