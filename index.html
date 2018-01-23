@@ -15,21 +15,19 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a href="#">Каталог товаров</a>
+                <a href="catalog.html">Каталог товаров</a>
               </li>
               <li class="site-list__item">
-                <a href="#">Вязание на заказ</a>
+                <a href="form.html">Вязание на заказ</a>
               </li>
-            </ul>
-            <ul class="main-nav__list user-list">
-              <li class="user-list__item">
+              <li class="site-list__item">
                 <form action="https://echo.htmlacademy.ru" method="get">
-                  <input type="text" class="user-list__search" name="search" placeholder="Поиск по сайту">
+                  <input type="text" class="site-list__search" name="search" placeholder="Поиск по сайту">
                   <label class="top_search_label"></label>
                 </form>
               </li>
-              <li class="user-list__item">
-                <a class="user-list__basket" href="#">Корзина</a>
+              <li class="site-list__item">
+                <a class="site-list__basket" href="#">Корзина</a>
               </li>
             </ul>
           </div>
@@ -51,9 +49,9 @@
       <section class="product">
         <h2 class="product__name">Вязаные корзинки</h2>
         <span class="product__flag">Товар недели</span>
-        <div class="product__descr">
+        <p class="product__descr">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-        </div>
+        </p>
         <table class="product__features">
           <tr>
             <td class="product__feature">
@@ -81,9 +79,9 @@
           </tr>
         </table>
         <img src="source/img/baskets.jpg" width="260" height="315" alt="">
-        <div class="product__price">
+        <p class="product__price">
           Цена: 990 руб.
-        </div>
+        </p>
         <a class="product__order button" href="#">Заказать</a>
       </section>
       <section class="advantages">
@@ -111,14 +109,13 @@
       </section>
       <section class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
-<!-- считаются ли отзывы слайдером или подгружаются при нажатии кнопки? -->
         <p class="reviews__text">
           Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
           В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также
           набирают больше лайков!
         </p>
-        <span class="reviews__author">Анастасия Красильникова</span>
-        <span class="reviews__author-nickname">@misssssiskras</span>
+        <cite class="reviews__author">Анастасия Красильникова</cite>
+        <span class="reviews__author-nickname"><a href="#">@misssssiskras</a></span>
         <div class="reviews__controls">
           <button class="reviews__control-prev" type="button" name="button-prev"></button>
           <button class="reviews__control-next" type="button" name="button-next"></button>
@@ -145,7 +142,9 @@
             </td>
           </tr>
         </table>
-        <a class="contacts__map" href="map.html"><img src="source/img/map.jpg" alt="Карта" width="320" height="456"></a>
+        <div class="contacts__map">
+          <img src="source/img/map.jpg" alt="Карта" width="320" height="456">
+        </div>
         <a class="contacts__write-us button" href="#">Напишите нам</a>
       </section>
     </main>

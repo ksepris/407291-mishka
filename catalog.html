@@ -18,54 +18,50 @@
                 <a href="#">Каталог товаров</a>
               </li>
               <li class="site-list__item">
-                <a href="#">Вязание на заказ</a>
+                <a href="form.html">Вязание на заказ</a>
               </li>
-            </ul>
-            <ul class="main-nav__list user-list">
-              <li class="user-list__item">
+              <li class="site-list__item">
                 <form action="https://echo.htmlacademy.ru" method="get">
-                  <input type="text" class="user-list__search" name="search" placeholder="Поиск по сайту">
+                  <input type="text" class="site-list__search" name="search" placeholder="Поиск по сайту">
                   <label class="top_search_label"></label>
                 </form>
               </li>
-              <li class="user-list__item">
-                <a class="user-list__basket" href="#">Корзина</a>
+              <li class="site-list__item">
+                <a class="site-list__basket" href="#">Корзина</a>
               </li>
             </ul>
           </div>
         </nav>
       </div>
       <div class="bottom-header">
-        <h1 class="bottom-header__title bottom-header__title--catalog">Каталог товаров</h1>
+        <h1 class="bottom-header__title">Каталог товаров</h1>
       </div>
     </header>
     <main class="page-main">
       <div class="page-main__wrapper">
         <section class="products-catalog">
-          <div class="products-catalog__item">
+          <article class="products-catalog__item">
             <img class="products-catalog__img" src="source/img/zaichik.jpg"  width="260" height="196" alt="">
-            <h2 class="products-catalog__name">Зайчик-попрыгайчик</h2>
+            <h1 class="products-catalog__name"><a href="#">Зайчик-попрыгайчик</a></h1>
             <span class="products-catalog__feautures">Рост 30 см, вес 200 г</span>
-            <div class="products-catalog__price">1 200 руб.</div>
-          </div>
-          <div class="products-catalog__item">
+            <span class="products-catalog__price">1 200 руб.</span>
+          </article>
+          <article class="products-catalog__item">
             <img class="products-catalog__img" src="source/img/korzinka.jpg"  width="260" height="196" alt="">
-            <h2 class="products-catalog__name">Корзинка для белья</h2>
+            <h1 class="products-catalog__name"><a href="#">Корзинка для белья</a></h1>
             <span class="products-catalog__feautures">Диаметр 15 см, высота 10 см</span>
-            <div class="products-catalog__price">690 руб.</div>
-          </div>
-          <div class="products-catalog__item">
+            <span class="products-catalog__price">690 руб.</span>
+          </article>
+          <article class="products-catalog__item">
             <img class="products-catalog__img" src="source/img/toy-basket.jpg"  width="260" height="196" alt="">
-            <h2 class="products-catalog__name">Большая корзинка для игрушек</h2>
+            <h1 class="products-catalog__name"><a href="#">Большая корзинка для игрушек</a></h1>
             <span class="products-catalog__feautures">Диаметр 30 см, высота 30 см</span>
-            <div class="products-catalog__price">1 500 руб.</div>
-          </div>
+            <span class="products-catalog__price">1 500 руб.</span>
+          </article>
         </section>
         <section class="products-video">
           <h2 class="products-video__title">Процесс производства</h2>
-          <video class="products-video__video" width="260" height="150" controls="controls" poster="source/video/production.jpg">
-             <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-          </video>
+          <img class="products-video__video" src="source/img/video.jpg"  width="260" height="150" alt="">
           <p class="products-video__descr">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
@@ -88,7 +84,8 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        Разработано
+        <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        <a class="copyright__img" href="https://htmlacademy.ru/intensive/adaptive"><img src="source/img/htmlacademy.png" alt=""></a>
       </div>
     </footer>
   </body>
