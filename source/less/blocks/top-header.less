@@ -1,0 +1,43 @@
+.top-header{
+  .top-header__logo{
+    height: 35px;
+  }
+  .top-header__logo-image{
+    padding: 20px 88px;
+  }
+
+  outline: 3px solid red;
+  width: 320px;
+  margin: 0 auto;
+  min-height: 394px;
+
+  .top-header__wrapper{
+    outline: 4px solid green;
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @tablet-width){
+    width: auto;
+    margin: 0;
+    min-height: 88px;
+
+    .top-header__logo{
+      height: 46px;
+    }
+
+    .top-header__wrapper{
+      width: 668px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: @desktop-width){
+    .top-header__wrapper{
+      width: 1050px;
+    }
+    .top-header__logo{
+      height: 72px;
+    }
+  }
+}

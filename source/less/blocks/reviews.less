@@ -27,4 +27,65 @@
     font-weight: normal;
     font-family: 'OpenSans', sans-serif;
   }
+
+  .reviews__write{
+    font-size: 17px;
+    line-height: 20px;
+    color: #444444;
+    font-weight: bold;
+    font-family: 'OpenSans', sans-serif;
+    text-decoration: none;
+    padding: 16px 0px;
+    border: 2px solid @light-text-color;
+    display: block;
+    text-align: center;
+
+    margin-bottom: 44px;
+  }
+  .reviews__control-prev, .reviews__control-next{
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border: 1px solid @list-border-color;
+    padding: 12px 0px;
+    padding-left: 27px;
+    padding-right: 42px;
+  }
+  .reviews__control-next{
+    margin-left: -5px;
+  }
+  .reviews__control-prev{
+    margin-left: 10px;
+    margin-bottom: 38px;
+    margin-top: 38px;
+  }
+
+  outline: 3px solid red;
+  width: 320px;
+  margin: 0 auto;
+  min-height: 620px;
+
+  .reviews__wrapper{
+    outline: 4px solid green;
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @tablet-width){
+    width: auto;
+    margin: 0;
+    min-height: 456px;
+
+    .reviews__wrapper{
+      width: 668px;
+      margin: 0 auto;
+    }
+  }
+  @media (min-width: @desktop-width){
+    .reviews__wrapper{
+      width: 1050px;
+    }
+  }
 }

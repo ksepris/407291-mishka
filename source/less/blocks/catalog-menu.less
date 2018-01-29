@@ -1,9 +1,30 @@
 .catalog-menu{
+  min-height: 206px;
+  display: flex;
+  flex-direction: column;
+
   .catalog-menu__item{
     font-size: 19px;
     line-height: 24px;
     color: @catalog-menu-text-color;
     font-weight: bold;
     font-family: 'OpenSans', sans-serif;
+    text-decoration: none;
+    display: block;
+    padding: 28px 28px;
+  }
+  .catalog-menu__item--interior{
+    background-color: @catalog-interior-color;
+  }
+  .catalog-menu__item--toys{
+    background-color: @catalog-toys-color;
+  }
+
+  @media (min-width: @tablet-width){
+    width: 668px;
+    min-height: 88px;
+  }
+  @media (min-width: @desktop-width){
+    width: 1050px;
   }
 }
