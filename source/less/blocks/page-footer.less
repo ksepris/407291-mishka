@@ -6,6 +6,9 @@
   margin: 0 auto;
   min-height: 160px;
 
+  .page-footer__logo{
+    display: none;
+  }
   .page-footer__wrapper{
     outline: 4px solid green;
     width: 260px;
@@ -26,10 +29,23 @@
     width: auto;
     margin: 0;
     min-height: 142px;
+    padding-top: 50px;
 
     .page-footer__wrapper{
       width: 668px;
       margin: 0 auto;
+      flex-direction: row;
+      align-items: center;
+    }
+    .page-footer__logo{
+      display: block;
+    }
+    .page-footer__copyright{
+      margin-top: -30px;
+      margin-left: 70px;
+    }
+    .page-footer__social{
+      margin-left: 154px;
     }
   }
   @media (min-width: @desktop-width){

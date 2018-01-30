@@ -15,17 +15,17 @@
           <nav class="main-nav">
             <button class="main-nav__toggle" type="button"><img src="img/icon-menu-close.svg" width="21" height="20" alt="" /></button>
             <ul class="main-nav__list site-list">
-              <li>
-                <a class="site-list__item" href="catalog.html">Каталог товаров</a>
+              <li class="site-list__item">
+                <a class="site-list__catalog" href="catalog.html">Каталог товаров</a>
               </li>
-              <li>
-                <a class="site-list__item" href="form.html">Вязание на заказ</a>
+              <li class="site-list__item">
+                <a class="site-list__order" href="form.html">Вязание на заказ</a>
               </li>
-              <li>
-                <a class="site-list__item" class="site-list__search" href="#">Поиск по сайту</a>
+              <li class="site-list__item">
+                <a class="site-list__search" href="#">Поиск по сайту</a>
               </li>
-              <li>
-                <a class="site-list__item" class="site-list__basket" href="#">Корзина</a>
+              <li class="site-list__item">
+                <a class="site-list__basket" class="site-list__basket" href="#">Корзина: пока пуста</a>
               </li>
             </ul>
           </nav>
@@ -50,40 +50,42 @@
         <div class="product__wrapper">
           <h2 class="product__name">Вязаные корзинки</h2>
           <span class="product__flag">Товар недели</span>
-          <p class="product__descr">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-          </p>
-          <table class="product__features">
-            <tr>
-              <td class="product__feature">
-                Цвет:
-              </td>
-              <td class="product__feature-value">
-                «Тиффани»/серый
-              </td>
-            </tr>
-            <tr>
-              <td class="product__feature">
-                Диаметр:
-              </td>
-              <td class="product__feature-value">
-                25 см
-              </td>
-            </tr>
-            <tr>
-              <td class="product__feature">
-                Высота:
-              </td>
-              <td class="product__feature-value">
-                15 см
-              </td>
-            </tr>
-          </table>
-          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="">
-          <p class="product__price">
-            Цена: 990 руб.
-          </p>
-          <a class="product__order button" href="#">Заказать</a>
+          <div class="product__descr-wrapper">
+            <p class="product__descr">
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            </p>
+            <table class="product__features">
+              <tr>
+                <td class="product__feature">
+                  Цвет:
+                </td>
+                <td class="product__feature-value">
+                  «Тиффани»/серый
+                </td>
+              </tr>
+              <tr>
+                <td class="product__feature">
+                  Диаметр:
+                </td>
+                <td class="product__feature-value">
+                  25 см
+                </td>
+              </tr>
+              <tr>
+                <td class="product__feature">
+                  Высота:
+                </td>
+                <td class="product__feature-value">
+                  15 см
+                </td>
+              </tr>
+            </table>
+            <img class="product__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="">
+            <p class="product__price">
+              Цена: 990 руб.
+            </p>
+            <a class="product__order button" href="#">Заказать</a>
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -119,18 +121,22 @@
             В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также
             набирают больше лайков!
           </p>
-          <cite class="reviews__author">Анастасия Красильникова</cite>
-          <span class="reviews__author-nickname"><a href="#">@misssssiskras</a></span>
+          <div class="reviews__author">
+            <cite class="reviews__author-name">Анастасия Красильникова</cite>
+            <span class="reviews__author-nickname"><a href="#">@misssssiskras</a></span>
+          </div>
           <div class="reviews__controls">
             <button class="reviews__control-prev" type="button" name="button-prev"><img src="img/icon-left-arrow.svg" width="50" height="26" alt="" /></button>
             <button class="reviews__control-next" type="button" name="button-next"><img src="img/icon-right-arrow.svg" width="50" height="26" alt="" /></button>
           </div>
+          <!-- не перемещается кнопка почему-то на второе место -->
           <a class="reviews__write button" href="#">Написать</a>
         </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
+          <!-- делать это через таблицу или просто дивами? -->
           <table class="contacts__list">
             <tr>
               <td class="contacts__field">
@@ -158,6 +164,9 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
