@@ -13,6 +13,9 @@
     border-bottom: 1px solid @list-border-color;
     position: relative;
   }
+  .site-list__item:nth-child(5), .site-list__item:nth-child(6){
+    display: none;
+  }
   .site-list__catalog{
     font-size: 17px;
     line-height: 24px;
@@ -76,6 +79,11 @@
       border-left: 1px solid @list-border-color;
       margin-left: 320px;
     }
+    .site-list__item:nth-child(4){
+      padding-left: 83px;
+      padding-right: 0px;
+      border-left: 1px solid @list-border-color;
+    }
     .site-list__search::before{
       content: '';
       position: absolute;
@@ -87,11 +95,6 @@
     }
     .site-list__search{
       font-size: 0px;
-    }
-    .site-list__item:nth-child(4){
-      padding-left: 83px;
-      padding-right: 0px;
-      border-left: 1px solid @list-border-color;
     }
     .site-list__basket::before{
       content: '';
@@ -112,5 +115,61 @@
 
   @media (min-width: @desktop-width){
     width: 1050px;
+
+    .site-list__item:nth-child(1){
+      order: 1;
+      padding-right: 34px;
+      padding-top: 30px;
+    }
+    .site-list__item:nth-child(2){
+      order: 2;
+      padding-left: 34px;
+      padding-top: 30px;
+      border-left: 1px solid @list-border-color;
+      margin-left: 0;
+    }
+    .site-list__item:nth-child(3){
+      order: 3;
+    }
+    .site-list__item:nth-child(4){
+      order: 4;
+    }
+    .site-list__item:nth-child(5){
+      display: block;
+      order: 5;
+      padding: 0px;
+      padding-top: 20px;
+    }
+    .site-list__item:nth-child(6){
+      display: block;
+      order: 6;
+      padding: 0px;
+      padding-top: 20px;
+      margin-left: 60px;
+    }
+    .site-list__new-products{
+      font-size: 15px;
+      line-height: 24px;
+      color: @dark-text-color;
+      font-weight: bold;
+      font-family: 'OpenSans', sans-serif;
+      text-decoration: none;
+      display: block;
+    }
+    .site-list__sale{
+      font-size: 15px;
+      line-height: 24px;
+      color: @dark-text-color;
+      font-weight: bold;
+      font-family: 'OpenSans', sans-serif;
+      text-decoration: none;
+      display: block;
+    }
+    .site-list__catalog{
+      font-size: 17px;
+    }
+    .site-list__order{
+      font-size: 17px;
+    }
   }
 }

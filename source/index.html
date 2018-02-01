@@ -25,7 +25,13 @@
                 <a class="site-list__search" href="#">Поиск по сайту</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__basket" class="site-list__basket" href="#">Корзина: пока пуста</a>
+                <a class="site-list__basket" href="#">Корзина: пока пуста</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__new-products" href="#">Новые поступления</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__sale" href="#">Распродажа</a>
               </li>
             </ul>
           </nav>
@@ -91,7 +97,7 @@
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="advantages__title">Коротко о нас:</h2>
-          <ul class="advantages_list">
+          <ul class="advantages__list">
             <li class="advantages__item advantages__item--materials">
               Экологически чистые материалы
             </li>
@@ -129,15 +135,21 @@
             <button class="reviews__control-prev" type="button" name="button-prev"><img src="img/icon-left-arrow.svg" width="50" height="26" alt="" /></button>
             <button class="reviews__control-next" type="button" name="button-next"><img src="img/icon-right-arrow.svg" width="50" height="26" alt="" /></button>
           </div>
-          <!-- не перемещается кнопка почему-то на второе место -->
+          <!--не работает почему-то стили для button  -->
           <a class="reviews__write button" href="#">Написать</a>
         </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
-          <!-- делать это через таблицу или просто дивами? -->
-          <table class="contacts__list">
+          <span class="contacts__email">e-mail:  <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></span>
+          <div class="contacts__address">
+            <span>адрес:</span>
+            <p class="contacts__address-place">
+              г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+            </p>
+          </div>
+          <!-- <table class="contacts__list">
             <tr>
               <td class="contacts__field">
                 e-mail:
@@ -154,7 +166,7 @@
                 г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
               </td>
             </tr>
-          </table>
+          </table> -->
         </div>
         <div class="contacts__map">
           <img src="img/map-mobile@1x.jpg" alt="Карта" width="322" height="457">
