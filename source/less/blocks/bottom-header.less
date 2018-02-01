@@ -10,13 +10,11 @@
     width: 320px;
     margin: 0 auto;
   }
-
   .bottom-header__menu{
     margin: 0;
     padding: 0;
     list-style: none;
   }
-
   .bottom-header__title {
     font-size: 27px;
     line-height: 30px;
@@ -29,6 +27,9 @@
     padding-top: 70px;
     padding-bottom: 118px;
     margin: 0 auto;
+  }
+  .bottom-header__title--nobcg{
+    background: none;
   }
 
   @media (min-width: @tablet-width){
@@ -57,5 +58,18 @@
     .bottom-header__wrapper{
       width: 1050px;
     }
+  }
+}
+
+.bottom-header--darker-color{
+  background-color: @bottom-header-background-color-noimg;
+  min-height: 176px;
+
+  @media (min-width: @tablet-width){
+    min-height: 220px;
+  }
+
+  @media (min-width: @desktop-width){
+    min-height: 250px;
   }
 }
