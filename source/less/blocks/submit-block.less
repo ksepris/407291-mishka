@@ -1,0 +1,38 @@
+.submit-block{
+  width: 260px;
+  margin: 0 auto;
+
+  .submit-block__btn{
+    background-color: none;
+    width: 256px;
+    // display: inline;
+    // margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .submit-block__star{
+    font-size: 14px;
+    line-height: 16px;
+    color: @light-text-color;
+    font-weight: normal;
+    font-family: 'OpenSans', sans-serif;
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    // display: inline;
+  }
+
+  @media (min-width: @tablet-width){
+    width: 668px;
+    display: flex;
+    justify-content: space-between;
+
+    .submit-block__star{
+      width: 300px;
+      margin-left: 230px;
+      order: 2;
+    }
+    .submit-block__btn{
+      order: 1;
+    }
+  }
+}

@@ -1,4 +1,14 @@
 .order-types{
+  outline: 3px solid red;
+  width: 320px;
+  margin: 0 auto;
+
+  .order-types__wrapper{
+    outline: 4px solid green;
+    width: 260px;
+    margin: 0 auto;
+  }
+
   .order-types__title{
     font-size: 17px;
     line-height: 16px;
@@ -12,5 +22,35 @@
     color: @dark-text-color;
     font-weight: bold;
     font-family: 'OpenSans', sans-serif;
+  }
+
+  @media (min-width: @tablet-width){
+    width: auto;
+    margin: 0;
+
+    .order-types__wrapper{
+      width: 498px;
+      padding-left: 168px;
+    }
+    .order-types__item{
+      display: block;
+      width: 440px;
+    }
+    .order-types__title{
+      margin-left: -168px;
+      margin-bottom: -16px;
+    }
+  }
+
+  @media (min-width: @desktop-width){
+    .order-types__wrapper{
+      width: 876px;
+      padding-left: 174px;
+    }
+
+    .order-types__title{
+      margin-left: -110px;
+      margin-bottom: -16px;
+    }
   }
 }

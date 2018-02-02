@@ -1,4 +1,10 @@
 .contacts{
+  outline: 3px solid red;
+  width: 320px;
+  margin: 0 auto;
+  min-height: 894px;
+  padding-top: 38px;
+
   .contacts__title{
     font-size: 18px;
     line-height: 30px;
@@ -7,11 +13,106 @@
     font-family: 'OpenSans', sans-serif;
   }
 
-  .contacts__list{
+  .contacts__email, .contacts__address{
     font-size: 15px;
     line-height: 30px;
     color: @light-text-color;
     font-weight: normal;
     font-family: 'OpenSans', sans-serif;
+  }
+  .contacts__address-place{
+    width: 140px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 30px;
+  }
+  .contacts__address{
+    display: flex;
+  }
+
+  .contacts__wrapper{
+    outline: 4px solid green;
+    width: 260px;
+    margin: 0 auto;
+  }
+  .contacts__write-us{
+    font-size: 17px;
+    line-height: 20px;
+    color: #444444;
+    font-weight: bold;
+    font-family: 'OpenSans', sans-serif;
+    text-decoration: none;
+    padding: 16px 0px;
+    border: 2px solid @light-text-color;
+    display: block;
+    text-align: center;
+
+    margin: 0 auto;
+    width: 228px;
+    margin-top: 38px;
+  }
+
+  @media (min-width: @tablet-width){
+    width: auto;
+    margin: 0;
+    min-height: 926px;
+
+    .contacts__wrapper{
+      width: 668px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .contacts__title{
+      font-size: 43px;
+      line-height: 50px;
+      width: 500px;
+    }
+    .contacts__list{
+      font-size: 17px;
+      line-height: 30px;
+      display: flex;
+    }
+    .contacts__value{
+      width: 222px;
+    }
+    .contacts__address-place{
+      width: 200px;
+    }
+    .contacts__address{
+      margin-left: 56px;
+    }
+  }
+  @media (min-width: @desktop-width){
+    position: relative;
+
+    .contacts__wrapper{
+      width: 986px;
+      padding-left: 64px;
+      // flex-direction: column;
+      // align-items: flex-start;
+    }
+    .contacts__title{
+      font-size: 53px;
+      line-height: 57px;
+      width: 876px;
+    }
+    .contacts__email{
+      width: 876px;
+      margin-left: 0;
+    }
+    .contacts__address{
+      width: 876px;
+      margin-left: 0;
+    }
+    .contacts__map{
+      position: absolute;
+      top: 70px;
+      right: 120px;
+    }
+    .contacts__write-us{
+      margin: 0;
+      margin-left: 180px;
+    }
   }
 }

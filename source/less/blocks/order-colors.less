@@ -1,4 +1,14 @@
 .order-colors{
+  outline: 3px solid red;
+  width: 320px;
+  margin: 0 auto;
+
+  .order-colors__wrapper{
+    outline: 4px solid green;
+    width: 260px;
+    margin: 0 auto;
+  }
+
   .order-colors__title{
     font-size: 17px;
     line-height: 16px;
@@ -6,12 +16,52 @@
     font-weight: bold;
     font-family: 'OpenSans', sans-serif;
   }
-
   .order-colors__item{
     font-size: 17px;
     line-height: 18px;
     color: @dark-text-color;
     font-weight: bold;
     font-family: 'OpenSans', sans-serif;
+    width: 260px;
+    display: block;
+  }
+
+  @media (min-width: @tablet-width){
+    width: auto;
+    margin: 0;
+    background-color: @bottom-header-background-color-noimg;
+
+    .order-colors__wrapper{
+      width: 498px;
+      padding-left: 168px;
+    }
+
+    .order-colors__title{
+      margin-left: -168px;
+      margin-bottom: -16px;
+    }
+    .order-colors__item{
+      width: 200px;
+    }
+    .order-colors__flex{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (min-width: @desktop-width){
+    .order-colors__wrapper{
+      width: 686px;
+      padding-left: 174px;
+      padding-right: 190px;
+    }
+
+    .order-colors__title{
+      margin-left: -110px;
+      margin-bottom: -16px;
+    }
+    .order-colors__item{
+      width: 200px;
+    }
   }
 }
