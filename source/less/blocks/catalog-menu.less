@@ -4,6 +4,7 @@
   flex-direction: column;
 
   .catalog-menu__item{
+    position: relative;
     font-size: 19px;
     line-height: 24px;
     color: @catalog-menu-text-color;
@@ -13,11 +14,37 @@
     display: block;
     padding: 28px 28px;
   }
+  .catalog-menu__item::after{
+    content: '';
+    position: absolute;
+    // top: 22px;
+    // right: 36px;
+    // width: 40px;
+    // height: 62px;
+    // background-image: url(../img/icon-interior.svg);
+  }
+
   .catalog-menu__item--interior{
     background-color: @catalog-interior-color;
+
+    &::after{
+      top: 22px;
+      right: 36px;
+      width: 40px;
+      height: 62px;
+      background-image: url(../img/icon-interior.svg);
+    }
   }
   .catalog-menu__item--toys{
     background-color: @catalog-toys-color;
+
+    &::after{
+      top: 22px;
+      right: 27px;
+      width: 60px;
+      height: 60px;
+      background-image: url(../img/icon-toy.svg);
+    }
   }
 
   @media (min-width: @tablet-width){

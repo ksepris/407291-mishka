@@ -1,4 +1,16 @@
 .advantages{
+  // outline: 3px solid red;
+  width: 320px;
+  padding-top: 14px;
+  margin: 0 auto;
+  // min-height: 800px;
+
+  .advantages__wrapper{
+    // outline: 4px solid green;
+    width: 260px;
+    margin: 0 auto;
+  }
+
   .advantages__title{
     font-size: 25px;
     line-height: 30px;
@@ -12,29 +24,83 @@
     list-style: none;
   }
   .advantages__item{
+    position: relative;
     font-size: 17px;
     line-height: 20px;
     color: @dark-text-color;
     font-weight: bold;
     font-family: 'OpenSans', sans-serif;
-    outline: 1px solid yellow;
-    width: 210px;
-    padding-top: 56px;
+    // outline: 1px solid yellow;
+    width: 250px;
+    padding-top: 62px;
     padding-bottom: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 21px;
+  }
+  .advantages__item::before{
+    content: '';
+    position: absolute;
   }
 
-  outline: 3px solid red;
-  width: 320px;
-  padding-top: 30px;
-  margin: 0 auto;
-  min-height: 800px;
-
-  .advantages__wrapper{
-    outline: 4px solid green;
-    width: 260px;
-    margin: 0 auto;
+  .advantages__item--materials{
+    &::before{
+      top: 10px;
+      left: 10px;
+      width: 32px;
+      height: 37px;
+      background: url(../img/icon-feature-flower.svg) no-repeat;
+    }
   }
+
+  .advantages__item--style{
+    &::before{
+      top: 10px;
+      left: 0px;
+      width: 47px;
+      height: 27px;
+      background: url(../img/icon-feature-money.svg) no-repeat;
+    }
+  }
+
+  .advantages__item--likes{
+    &::before{
+      top: 14px;
+      left: 7px;
+      width: 33px;
+      height: 27px;
+      background: url(../img/icon-feature-heart.svg) no-repeat;
+    }
+  }
+
+  .advantages__item--handmade{
+    &::before{
+      top: 14px;
+      left: 3px;
+      width: 34px;
+      height: 34px;
+      background: url(../img/icon-feature-ball.svg) no-repeat;
+    }
+  }
+
+  .advantages__item--patriot{
+    &::before{
+      top: 14px;
+      left: -6px;
+      width: 55px;
+      height: 23px;
+      background: url(../img/icon-feature-rocket.svg) no-repeat;
+    }
+  }
+
+  .advantages__item--gift{
+    &::before{
+      top: 12px;
+      left: 4px;
+      width: 33px;
+      height: 33px;
+      background: url(../img/icon-feature-gift.svg) no-repeat;
+    }
+  }
+
 
   @media (min-width: @tablet-width){
     width: auto;

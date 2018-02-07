@@ -1,9 +1,15 @@
 .contacts{
-  outline: 3px solid red;
+  // outline: 3px solid red;
   width: 320px;
   margin: 0 auto;
-  min-height: 894px;
-  padding-top: 38px;
+  // min-height: 894px;
+  padding-top: 28px;
+
+  .contacts__wrapper{
+    // outline: 4px solid green;
+    width: 260px;
+    margin: 0 auto;
+  }
 
   .contacts__title{
     font-size: 18px;
@@ -11,8 +17,8 @@
     color: @dark-text-color;
     font-weight: bold;
     font-family: 'OpenSans', sans-serif;
+    margin-bottom: 26px;
   }
-
   .contacts__email, .contacts__address{
     font-size: 15px;
     line-height: 30px;
@@ -20,36 +26,29 @@
     font-weight: normal;
     font-family: 'OpenSans', sans-serif;
   }
+  .contacts__email a{
+    border-bottom: 1px solid @link-color;
+    text-decoration: none;
+    color: @light-text-color;
+    padding-bottom: 4px;
+  }
   .contacts__address-place{
-    width: 140px;
+    width: 150px;
     padding: 0px;
     margin: 0px;
     margin-left: 30px;
   }
   .contacts__address{
     display: flex;
+    margin-top: 30px;
+    margin-bottom: 40px;
   }
 
-  .contacts__wrapper{
-    outline: 4px solid green;
-    width: 260px;
-    margin: 0 auto;
-  }
   .contacts__write-us{
-    font-size: 17px;
-    line-height: 20px;
-    color: #444444;
-    font-weight: bold;
-    font-family: 'OpenSans', sans-serif;
-    text-decoration: none;
-    padding: 16px 0px;
-    border: 2px solid @light-text-color;
-    display: block;
-    text-align: center;
-
     margin: 0 auto;
-    width: 228px;
-    margin-top: 38px;
+    width: 256px;
+    margin-top: 34px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: @tablet-width){
