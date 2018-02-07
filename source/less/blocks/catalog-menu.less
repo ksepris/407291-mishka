@@ -1,5 +1,5 @@
 .catalog-menu{
-  min-height: 206px;
+  // min-height: 206px;
   display: flex;
   flex-direction: column;
 
@@ -48,16 +48,30 @@
   }
 
   @media (min-width: @tablet-width){
-    width: 668px;
-    min-height: 88px;
+    width: 676px;
+    // min-height: 88px;
     flex-direction: row;
+    align-items: flex-start;
 
     .catalog-menu__item{
       font-size: 20px;
       line-height: 30px;
-      padding: 32px 0px;
+      padding: 28px 0px;
       padding-left: 36px;
-      width: 298px;
+      width: 334px;
+    }
+
+    .catalog-menu__item--interior{
+      &::after{
+        top: 30px;
+      }
+    }
+
+    .catalog-menu__item--toys{
+      &::after{
+        top: 30px;
+        right: 34px;
+      }
     }
   }
   @media (min-width: @desktop-width){
