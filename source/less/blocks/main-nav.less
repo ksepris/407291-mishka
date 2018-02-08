@@ -14,6 +14,12 @@
     cursor: pointer;
   }
 
+  @media (max-width: @mobile-width-only){
+    .main-nav__list{
+      display: block;
+    }
+  }
+
   @media (min-width: @tablet-width){
     .main-nav__toggle{
       display: none;
@@ -23,7 +29,7 @@
 
 .main-nav--closed{
   .main-nav__toggle{
-    top: -51px;
+    top: -47px;
     right: 0px;
     background: url(../img/icon-menu-open.svg);
     width: 20px;
@@ -39,16 +45,10 @@
 
 .main-nav--opened{
   .main-nav__toggle{
-    top: -51px;
+    top: -47px;
     right: 0px;
     background: url(../img/icon-menu-close.svg);
     width: 21px;
     height: 20px;
-  }
-
-  @media (max-width: @mobile-width-only){
-    .main-nav__list{
-      display: block;
-    }
   }
 }
