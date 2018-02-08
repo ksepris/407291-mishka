@@ -112,6 +112,8 @@
   }
   @media (min-width: @desktop-width){
     position: relative;
+    padding-top: 54px;
+    padding-left: 209px;
 
     .contacts__wrapper{
       width: 986px;
@@ -124,22 +126,31 @@
       line-height: 57px;
       width: 876px;
     }
+    .contacts__title::after{
+      top: -10px;
+      left: -110px;
+    }
     .contacts__email{
       width: 876px;
       margin-left: 0;
     }
     .contacts__address{
       width: 876px;
+      margin-top: 14px;
       margin-left: 0;
     }
     .contacts__map{
+      width: 525px;
+      height: 457px;
       position: absolute;
-      top: 70px;
-      right: 120px;
+      top: 10px;
+      right: 98px;
     }
     .contacts__write-us{
       margin: 0;
-      margin-left: 180px;
+      margin-top: 38px;
+      margin-bottom: 106px;
+      margin-left: 66px;
     }
   }
 }
