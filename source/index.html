@@ -12,8 +12,9 @@
           <a class="top-header__logo">
             <img class="top-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
           </a>
-          <nav class="main-nav">
-            <button class="main-nav__toggle" type="button"><img src="img/icon-menu-close.svg" width="21" height="20" alt="" /></button>
+          <!-- бесплатная доставка это ссылка или просто текст? -->
+          <nav class="main-nav main-nav--closed">
+            <button class="main-nav__toggle" type="button"></button>
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__catalog" href="catalog.html">Каталог товаров</a>
@@ -60,32 +61,11 @@
             <p class="product__descr">
               Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
             </p>
-            <table class="product__features">
-              <tr>
-                <td class="product__feature">
-                  Цвет:
-                </td>
-                <td class="product__feature-value">
-                  «Тиффани»/серый
-                </td>
-              </tr>
-              <tr>
-                <td class="product__feature">
-                  Диаметр:
-                </td>
-                <td class="product__feature-value">
-                  25 см
-                </td>
-              </tr>
-              <tr>
-                <td class="product__feature">
-                  Высота:
-                </td>
-                <td class="product__feature-value">
-                  15 см
-                </td>
-              </tr>
-            </table>
+            <div class="product__features">
+              <p class="product__feature">Цвет:   «Тиффани»/серый</p>
+              <p class="product__feature">Диаметр:   25 см</p>
+              <p class="product__feature">Высота:   15 см</p>
+            </div>
             <img class="product__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="">
             <p class="product__price">
               Цена: 990 руб.
@@ -142,31 +122,13 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
-          <span class="contacts__email">e-mail:  <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></span>
+          <p class="contacts__email">e-mail:&ensp;&ensp;&ensp;<a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
           <div class="contacts__address">
             <span>адрес:</span>
             <p class="contacts__address-place">
               г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
             </p>
           </div>
-          <!-- <table class="contacts__list">
-            <tr>
-              <td class="contacts__field">
-                e-mail:
-              </td>
-              <td class="contacts__value">
-                <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-              </td>
-            </tr>
-            <tr>
-              <td class="contacts__field">
-                адрес:
-              </td>
-              <td class="contacts__value">
-                г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-              </td>
-            </tr>
-          </table> -->
         </div>
         <div class="contacts__map">
           <img src="img/map-mobile@1x.jpg" alt="Карта" width="322" height="457">
@@ -194,7 +156,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-          <a class="copyright__img" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="27" height="34" alt=""></a>
+          <a class="copyright__img" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" width="27" height="34" alt=""></a>
         </div>
       </div>
     </footer>

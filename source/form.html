@@ -12,8 +12,8 @@
           <a href="index.html" class="top-header__logo">
             <img class="top-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
           </a>
-          <nav class="main-nav">
-            <button class="main-nav__toggle" type="button"><img src="img/icon-menu-close.svg" width="21" height="20" alt="" /></button>
+          <nav class="main-nav main-nav--closed">
+            <button class="main-nav__toggle" type="button"></button>
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__catalog" href="catalog.html">Каталог товаров</a>
@@ -50,14 +50,11 @@
         <div class="order-types">
           <div class="order-types__wrapper">
             <h2 class="order-types__title">Тип</h2>
-            <label class="order-types__item">
-              <input type="radio" name="type" value="interior" id="interior" checked>
-              Аксессуар для интерьера
-            </label>
-            <label class="order-types__item">
-              <input type="radio" name="type" value="toy" id="toy">
-              Детская игрушка
-            </label>
+            <input class="order-types__radio" type="radio" name="type" value="interior" id="interior" checked>
+            <label for="interior" class="order-types__radio-label">Аксессуар для интерьера</label>
+
+            <input class="order-types__radio" type="radio" name="type" value="toy" id="toy">
+            <label for="toy" class="order-types__radio-label">Детская игрушка</label>
           </div>
         </div>
         <div class="order-colors">
