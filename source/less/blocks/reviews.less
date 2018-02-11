@@ -81,6 +81,10 @@
     padding-bottom: 106px;
     background: url(../img/review@1x.jpg) no-repeat;
 
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/review@2x.jpg");
+    }
+
     .reviews__wrapper{
       width: 668px;
       margin: 0 auto;
@@ -164,5 +168,8 @@
       margin-left: 464px;
     }
 
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/review@2x.jpg");
+    }
   }
 }
