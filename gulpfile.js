@@ -14,7 +14,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
-var del = require("del");
+// var del = require("del");
 
 gulp.task("style", function() {
   gulp.src("source/less/style.less")
@@ -23,10 +23,10 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
@@ -36,7 +36,7 @@ gulp.task("sprite", function () {
     inlineSvg: true
   }))
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("html", function () {
@@ -44,7 +44,7 @@ gulp.task("html", function () {
   .pipe(posthtml([
     include()
   ]))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("source"));
 });
 
 gulp.task("images", function () {
@@ -65,35 +65,35 @@ gulp.task("webp", function () {
 
 gulp.task("serve", function() {
   server.init({
-    server: "build/",
+    server: "source/"
   });
 
   gulp.watch("source/less/**/*.less", ["style"]);
   gulp.watch("source/*.html", ["html"]);
 });
 
-gulp.task("build", function(done){
-  run(
- "clean",
- "copy",
- "style",
- "sprite",
- "html",
- done
- );
-});
+// gulp.task("build", function(done){
+//   run(
+//    // "clean",
+//    // "copy",
+//    "style",
+//    "sprite",
+//    "html",
+//    done
+//  );
+// });
 
-gulp.task("copy", function () {
-  return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**"
-  ], {
-    base: "source"
-  })
-  .pipe(gulp.dest("build"));
-});
-
-gulp.task("clean", function () {
-  return del("build");
-});
+// gulp.task("copy", function () {
+//   return gulp.src([
+//     "source/fonts/**/*.{woff,woff2}",
+//     "source/img/**",
+//     "source/js/**"
+//   ], {
+//     base: "source"
+//   })
+//   .pipe(gulp.dest("build"));
+// });
+//
+// gulp.task("clean", function () {
+//   return del("build");
+// });
