@@ -13,6 +13,19 @@
     color: @order-title-color;
     font-weight: bold;
     font-family: 'OpenSans', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .order-colors__title::after{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 62px;
+    border: none;
+    background-color: @order-title-color;
+    width: 198px;
+    height: 1px;
   }
   .order-colors__item{
     font-size: 17px;
@@ -24,6 +37,48 @@
     display: block;
   }
 
+  & label{
+    display: block;
+    margin-bottom: 20px;
+  }
+  .order-colors__checkbox {
+  	display: none;
+  }
+  .order-colors__checkbox-custom {
+  	width: 36px;
+  	height: 36px;
+  	border: 2px solid #444444;
+  	position: relative;
+  }
+  .order-colors__checkbox-custom,
+  .order-colors__checkbox-label {
+  	display: inline-block;
+  	vertical-align: middle;
+  }
+  .order-colors__checkbox:checked + .order-colors__checkbox-custom::before {
+  	content: '';
+  	display: block;
+  	position: absolute;
+    width: 33px;
+    height: 23px;
+  	top: 7px;
+  	// right: 7px;
+  	// bottom: 7px;
+  	left: 3px;
+  	// background: #62d1ba;
+    background-image: url(../img/icon-tick.svg);
+  }
+
+  .order-colors__checkbox-label{
+    font-size: 17px;
+    line-height: 18px;
+    color: @dark-text-color;
+    font-weight: bold;
+    font-family: 'OpenSans', sans-serif;
+    width: 156px;
+    margin-left: 14px;
+  }
+
   @media (min-width: @tablet-width){
     width: auto;
     margin: 0;
@@ -32,18 +87,23 @@
     .order-colors__wrapper{
       width: 498px;
       padding-left: 168px;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
 
     .order-colors__title{
       margin-left: -168px;
-      margin-bottom: -16px;
+      margin-bottom: -26px;
     }
     .order-colors__item{
-      width: 200px;
+      width: 220px;
     }
     .order-colors__flex{
       display: flex;
       flex-wrap: wrap;
+    }
+    .order-colors__title::after{
+      display: none;
     }
   }
 
@@ -59,7 +119,7 @@
       margin-bottom: -16px;
     }
     .order-colors__item{
-      width: 200px;
+      width: 220px;
     }
   }
 }

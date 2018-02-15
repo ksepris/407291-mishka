@@ -71,11 +71,19 @@
         <div class="order-types">
           <div class="order-types__wrapper">
             <h2 class="order-types__title">Тип</h2>
-            <input class="order-types__radio" type="radio" name="type" value="interior" id="interior" checked="">
-            <label for="interior" class="order-types__radio-label">Аксессуар для интерьера</label>
+            <label>
+              <input class="order-types__radio" type="radio" name="type" value="interior" id="interior" checked="">
+              <span class="order-types__radio-custom"></span>
+              <span class="order-types__radio-label">Аксессуар для интерьера</span>
+            </label>
+            <label>
+              <input class="order-types__radio" type="radio" name="type" value="toy" id="toy">
+              <span class="order-types__radio-custom"></span>
+              <span class="order-types__radio-label">Детская игрушка</span>
+            </label>
 
-            <input class="order-types__radio" type="radio" name="type" value="toy" id="toy">
-            <label for="toy" class="order-types__radio-label">Детская игрушка</label>
+            <!-- <input class="order-types__radio" type="radio" name="type" value="toy" id="toy">
+            <label for="toy" class="order-types__radio-label">Детская игрушка</label> -->
           </div>
         </div>
         <div class="order-colors">
@@ -83,34 +91,35 @@
             <h2 class="order-colors__title">Цвет</h2>
             <div class="order-colors__flex">
               <label class="order-colors__item">
-                <input type="checkbox" class="checkbox" name="color" value="Белый" id="white" checked="">
-                <span class="checkbox_indicator"></span>
-                Белый
+                <!-- галочка не уменьшается -->
+                <input class="order-colors__checkbox" type="checkbox" name="color" value="Белый" id="white" checked="">
+                <span class="order-colors__checkbox-custom"></span>
+                <span class="order-colors__checkbox-label">Белый</span>
               </label>
               <label class="order-colors__item">
-                <input type="checkbox" class="checkbox" name="color" value="Серый" id="grey" checked="">
-                <span class="checkbox_indicator"></span>
-                Серый
+                <input class="order-colors__checkbox" type="checkbox" name="color" value="Серый" id="grey" checked="">
+                <span class="order-colors__checkbox-custom"></span>
+                <span class="order-colors__checkbox-label">Серый</span>
               </label>
               <label class="order-colors__item">
-                <input type="checkbox" class="checkbox" name="color" value="Тиффани" id="tiffany">
-                <span class="checkbox_indicator"></span>
-                «Тиффани»
+                <input class="order-colors__checkbox" type="checkbox" name="color" value="Тиффани" id="tiffany" checked="">
+                <span class="order-colors__checkbox-custom"></span>
+                <span class="order-colors__checkbox-label">«Тиффани»</span>
               </label>
               <label class="order-colors__item">
-                <input type="checkbox" class="checkbox" name="color" value="Черный" id="black">
-                <span class="checkbox_indicator"></span>
-                Черный
+                <input class="order-colors__checkbox" type="checkbox" name="color" value="Черный" id="black">
+                <span class="order-colors__checkbox-custom"></span>
+                <span class="order-colors__checkbox-label">Черный</span>
               </label>
               <label class="order-colors__item">
-                <input type="checkbox" class="checkbox" name="color" value="Розовый" id="pink">
-                <span class="checkbox_indicator"></span>
-                Розовый
+                <input class="order-colors__checkbox" type="checkbox" name="color" value="Розовый" id="pink">
+                <span class="order-colors__checkbox-custom"></span>
+                <span class="order-colors__checkbox-label">Розовый</span>
               </label>
               <label class="order-colors__item">
-                <input type="checkbox" class="checkbox" name="color" value="Оранжевый" id="orange">
-                <span class="checkbox_indicator"></span>
-                Оранжевый
+                <input class="order-colors__checkbox" type="checkbox" name="color" value="Оранжевый" id="orange">
+                <span class="order-colors__checkbox-custom"></span>
+                <span class="order-colors__checkbox-label">Оранжевый</span>
               </label>
             </div>
           </div>
@@ -160,7 +169,7 @@
         </div>
         <div class="submit-block">
           <p class="submit-block__star"><sup>*</sup>Поля обязательны для заполнения</p>
-          <input type="submit" class="button submit-block__btn" value="Отправить заказ">
+          <input type="submit" class="submit-block__btn button" value="Отправить заказ">
         </div>
 
       </form>

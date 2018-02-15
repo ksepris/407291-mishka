@@ -6,6 +6,9 @@
     width: 260px;
     margin: 0 auto;
   }
+  .order-customer__item{
+    margin-bottom: 22px;
+  }
 
   .order-customer__title{
     font-size: 17px;
@@ -13,6 +16,19 @@
     color: @order-title-color;
     font-weight: bold;
     font-family: 'OpenSans', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .order-customer__title::after{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 62px;
+    border: none;
+    background-color: @order-title-color;
+    width: 198px;
+    height: 1px;
   }
   .order-customer__name, .order-customer__surname, .order-customer__fathername{
     font-size: 17px;
@@ -22,7 +38,7 @@
     font-family: 'OpenSans', sans-serif;
     margin-top: 30px;
   }
-  .order-customer__name-field, .order-customer__surname-field, .order-customer__fathername-field{
+  .order-customer__name-field, .order-customer__surname-field, .order-customer__fathername-field {
     font-size: 17px;
     line-height: 18px;
     color: @light-text-color;
@@ -30,10 +46,36 @@
     font-family: 'OpenSans', sans-serif;
     outline: none;
     width: 260px;
-    padding: 16px 0;
+    padding: 16px 16px;
     border: none;
     border-bottom: 2px solid @dark-text-color;
   }
+  .order-customer__name-field:focus, .order-customer__surname-field:focus, .order-customer__fathername-field:focus{
+    border-bottom: 2px solid @order-form-icons-color;
+  }
+  .order-customer__name-field:hover, .order-customer__surname-field:hover, .order-customer__fathername-field:hover{
+    border-bottom: 2px solid @order-form-icons-color;
+  }
+
+  .order-customer__name-field::-webkit-input-placeholder {opacity: 0.3;}
+  .order-customer__name-field::-moz-placeholder          {opacity: 0.3;}
+  .order-customer__name-field:-moz-placeholder           {opacity: 0.3;}
+  .order-customer__name-field:-ms-input-placeholder      {opacity: 0.3;}
+
+  .order-customer__surname-field::-webkit-input-placeholder {opacity: 0.3;}
+  .order-customer__surname-field::-moz-placeholder          {opacity: 0.3;}
+  .order-customer__surname-field:-moz-placeholder           {opacity: 0.3;}
+  .order-customer__surname-field:-ms-input-placeholder      {opacity: 0.3;}
+
+  .order-customer__fathername-field::-webkit-input-placeholder {opacity: 0.3;}
+  .order-customer__fathername-field::-moz-placeholder          {opacity: 0.3;}
+  .order-customer__fathername-field:-moz-placeholder           {opacity: 0.3;}
+  .order-customer__fathername-field:-ms-input-placeholder      {opacity: 0.3;}
+
+  // .order-customer__name-field:focus::-webkit-input-placeholder {opacity: 1.0;}
+  // .order-customer__name-field:focus::-moz-placeholder          {opacity: 1.0;}
+  // .order-customer__name-field:focus:-moz-placeholder           {opacity: 1.0;}
+  // .order-customer__name-field:focus:-ms-input-placeholder      {opacity: 1.0;}
 
   @media (min-width: @tablet-width){
     width: auto;
@@ -42,20 +84,25 @@
     .order-customer__wrapper{
       width: 498px;
       padding-left: 168px;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
 
     .order-customer__title{
       margin-left: -168px;
-      margin-bottom: -16px;
+      margin-bottom: -26px;
+    }
+    .order-customer__title::after{
+      display: none;
     }
     .order-customer__name-field{
-      width: 426px;
+      width: 394px;
     }
     .order-customer__surname-field{
-      width: 376px;
+      width: 344px;
     }
     .order-customer__fathername-field{
-      width: 376px;
+      width: 344px;
     }
   }
 
@@ -71,13 +118,13 @@
       margin-bottom: -16px;
     }
     .order-customer__name-field{
-      width: 628px;
+      width: 596;
     }
     .order-customer__surname-field{
-      width: 574px;
+      width: 542px;
     }
     .order-customer__fathername-field{
-      width: 574px;
+      width: 542px;
     }
   }
 }

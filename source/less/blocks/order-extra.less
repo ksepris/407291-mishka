@@ -13,6 +13,19 @@
     color: @order-title-color;
     font-weight: bold;
     font-family: 'OpenSans', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .order-extra__title::after{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 62px;
+    border: none;
+    background-color: @order-title-color;
+    width: 198px;
+    height: 1px;
   }
 
   .order-extra__text-field{
@@ -28,6 +41,17 @@
     border: none;
     border: 2px solid @dark-text-color;
   }
+  .order-extra__text-field:focus{
+    border: 2px solid @order-form-icons-color;
+  }
+  .order-extra__text-field:hover{
+    border: 2px solid @order-form-icons-color;
+  }
+
+  .order-extra__text-field::-webkit-input-placeholder {opacity: 0.3;}
+  .order-extra__text-field::-moz-placeholder          {opacity: 0.3;}
+  .order-extra__text-field:-moz-placeholder           {opacity: 0.3;}
+  .order-extra__text-field:-ms-input-placeholder      {opacity: 0.3;}
 
   @media (min-width: @tablet-width){
     width: auto;
@@ -37,11 +61,16 @@
     .order-extra__wrapper{
       width: 498px;
       padding-left: 168px;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
 
     .order-extra__title{
       margin-left: -168px;
       margin-bottom: -16px;
+    }
+    .order-extra__title::after{
+      display: none;
     }
     .order-extra__text-field{
       width: 500px;
