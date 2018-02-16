@@ -1,10 +1,11 @@
 .submit-block{
   width: 260px;
   margin: 0 auto;
+  margin-top: 8px;
 
   .submit-block__btn{
-    width: 256px;
-    margin-bottom: 60px;
+    width: 260px;
+    margin-bottom: 56px;
   }
   .submit-block__star{
     font-size: 14px;
@@ -14,21 +15,29 @@
     font-family: 'OpenSans', sans-serif;
     width: 260px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: @tablet-width){
     width: 668px;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    margin-top: 0px;
 
     .submit-block__star{
+      font-size: 17px;
+      line-height: 30px;
       width: 350px;
-      margin-left: 240px;
+      margin-top: 4px;
+      margin-left: 138px;
+      margin-bottom: 0px;
       order: 2;
     }
     .submit-block__btn{
+      width: 266px;
+      margin-bottom: 48px;
       order: 1;
+
     }
   }
 }

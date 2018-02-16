@@ -15,7 +15,8 @@
     font-family: 'OpenSans', sans-serif;
     text-transform: uppercase;
     position: relative;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 8px;
   }
   .order-phone__title::after{
     content: '';
@@ -35,7 +36,7 @@
     font-family: 'OpenSans', sans-serif;
     outline: none;
     width: 260px;
-    padding: 16px 16px;
+    padding: 16px 0px;
     border: none;
     border-bottom: 2px solid @dark-text-color;
     position: relative;
@@ -67,19 +68,28 @@
     .order-phone__wrapper{
       width: 498px;
       padding-left: 168px;
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-top: 34px;
+      // padding-bottom: 50px;
     }
 
     .order-phone__title{
       margin-left: -168px;
-      margin-bottom: -16px;
+      margin-bottom: -38px;
     }
     .order-phone__title::after{
       display: none;
     }
     .order-phone__number-field{
+      font-size: 19px;
       width: 500px;
+      padding: 16px 16px;
+      background-position: 94% 50%;
+    }
+    .order-phone__number-field:focus{
+      background-position: 94% 50%;
+    }
+    .order-phone__number-field:hover{
+      background-position: 94% 50%;
     }
   }
 

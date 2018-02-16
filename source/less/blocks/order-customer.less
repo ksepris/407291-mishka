@@ -7,7 +7,7 @@
     margin: 0 auto;
   }
   .order-customer__item{
-    margin-bottom: 22px;
+    margin-bottom: 21px;
   }
 
   .order-customer__title{
@@ -18,7 +18,8 @@
     font-family: 'OpenSans', sans-serif;
     text-transform: uppercase;
     position: relative;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 29px;
   }
   .order-customer__title::after{
     content: '';
@@ -46,7 +47,7 @@
     font-family: 'OpenSans', sans-serif;
     outline: none;
     width: 260px;
-    padding: 16px 16px;
+    padding: 16px 0px;
     border: none;
     border-bottom: 2px solid @dark-text-color;
   }
@@ -72,11 +73,6 @@
   .order-customer__fathername-field:-moz-placeholder           {opacity: 0.3;}
   .order-customer__fathername-field:-ms-input-placeholder      {opacity: 0.3;}
 
-  // .order-customer__name-field:focus::-webkit-input-placeholder {opacity: 1.0;}
-  // .order-customer__name-field:focus::-moz-placeholder          {opacity: 1.0;}
-  // .order-customer__name-field:focus:-moz-placeholder           {opacity: 1.0;}
-  // .order-customer__name-field:focus:-ms-input-placeholder      {opacity: 1.0;}
-
   @media (min-width: @tablet-width){
     width: auto;
     margin: 0;
@@ -84,25 +80,40 @@
     .order-customer__wrapper{
       width: 498px;
       padding-left: 168px;
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-top: 34px;
+      padding-bottom: 30px;
     }
 
     .order-customer__title{
       margin-left: -168px;
-      margin-bottom: -26px;
+      margin-bottom: -36px;
     }
     .order-customer__title::after{
       display: none;
     }
     .order-customer__name-field{
       width: 394px;
+      padding: 15px 16px;
+      margin-left: 18px;
     }
     .order-customer__surname-field{
-      width: 344px;
+      width: 342px;
+      padding: 15px 16px;
+      margin-left: 17px;
     }
     .order-customer__fathername-field{
       width: 344px;
+      padding: 15px 16px;
+      margin-left: 18px;
+    }
+    .order-customer__name-field, .order-customer__surname-field, .order-customer__fathername-field {
+      font-size: 19px;
+    }
+    .order-customer__name, .order-customer__surname, .order-customer__fathername{
+      font-size: 19px;
+    }
+    .order-customer__item{
+      margin-bottom: 19px;
     }
   }
 

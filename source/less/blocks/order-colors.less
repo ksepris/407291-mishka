@@ -15,7 +15,8 @@
     font-family: 'OpenSans', sans-serif;
     text-transform: uppercase;
     position: relative;
-    margin-bottom: 20px;
+    margin-top: 32px;
+    margin-bottom: 25px;
   }
   .order-colors__title::after{
     content: '';
@@ -49,6 +50,14 @@
   	height: 36px;
   	border: 2px solid #444444;
   	position: relative;
+    margin-bottom: 1px;
+  }
+  .order-colors__checkbox-custom:hover{
+    border-color: #62d1ba;
+  }
+  .order-colors__checkbox-custom:active{
+    border-color: #444444;
+    opacity: 0.3;
   }
   .order-colors__checkbox-custom,
   .order-colors__checkbox-label {
@@ -59,14 +68,12 @@
   	content: '';
   	display: block;
   	position: absolute;
-    width: 33px;
-    height: 23px;
-  	top: 7px;
-  	// right: 7px;
-  	// bottom: 7px;
-  	left: 3px;
-  	// background: #62d1ba;
-    background-image: url(../img/icon-tick.svg);
+    width: 22px;
+    height: 16px;
+  	top: 10px;
+  	left: 7px;
+    background: url(../img/icon-tick.svg) no-repeat;
+    background-size: contain;
   }
 
   .order-colors__checkbox-label{
@@ -76,7 +83,7 @@
     font-weight: bold;
     font-family: 'OpenSans', sans-serif;
     width: 156px;
-    margin-left: 14px;
+    margin-left: 18px;
   }
 
   @media (min-width: @tablet-width){
@@ -84,19 +91,21 @@
     margin: 0;
     background-color: @bottom-header-background-color-noimg;
 
+
     .order-colors__wrapper{
       width: 498px;
-      padding-left: 168px;
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-left: 166px;
+      padding-top: 36px;
+      padding-bottom: 26px;
     }
 
     .order-colors__title{
       margin-left: -168px;
-      margin-bottom: -26px;
+      margin-bottom: -34px;
     }
     .order-colors__item{
-      width: 220px;
+      width: 210px;
+      margin-right: 36px;
     }
     .order-colors__flex{
       display: flex;
@@ -104,6 +113,23 @@
     }
     .order-colors__title::after{
       display: none;
+    }
+    .order-colors__checkbox-custom {
+    	width: 48px;
+    	height: 48px;
+      margin-bottom: 4px;
+    }
+    .order-colors__checkbox-label{
+      font-size: 19px;
+      width: 124px;
+      margin-left: 24px;
+      margin-top: -7px;
+    }
+    .order-colors__checkbox:checked + .order-colors__checkbox-custom::before {
+      width: 33px;
+      height: 22px;
+    	top: 12px;
+    	left: 9px;
     }
   }
 

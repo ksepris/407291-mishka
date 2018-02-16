@@ -54,6 +54,9 @@
               <li class="site-list__item">
                 <a class="site-list__sale" href="#">Распродажа</a>
               </li>
+              <li class="site-list__item">
+                <a class="site-list__delivery" href="#">Бесплатная доставка по России</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -74,7 +77,7 @@
 
                   <source media="(min-width: 1250px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-                  <!-- непонятный пробел после картинки -->
+                  <!-- непонятный пробел после картинки на десктопе -->
                   <img class="products-catalog__img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="">
                 </picture>
               </a>
@@ -83,13 +86,14 @@
                   <a class="products-catalog__name" href="#">Зайчик-попрыгайчик</a>
                 </h1>
                 <p class="products-catalog__feautures">Рост 30 см, вес 200 г</p>
-                <p class="products-catalog__price">1 200 руб.</p>
-                <!-- не получается сделать иконку корзины отдельно -->
-                <a class="products-catalog__basket" href="#">
-                  <svg class="products-catalog__basket-icon" width="21px" height="18px">
-                    <use xlink:href="img/sprite.svg#icon-cart"></use>
-                  </svg>
-                </a>
+                <div class="products-catalog__price-block">
+                  <span class="products-catalog__price">1 200 руб.</span>
+                  <a class="products-catalog__basket" href="#">
+                    <svg class="products-catalog__basket-icon" width="21px" height="18px">
+                      <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </article>
             <article class="products-catalog__item">
@@ -109,7 +113,14 @@
                   <a class="products-catalog__name" href="#">Корзинка для белья</a>
                 </h1>
                 <p class="products-catalog__feautures">Диаметр 15 см, высота 10 см</p>
-                <p class="products-catalog__price">690 руб.</p>
+                <div class="products-catalog__price-block">
+                  <span class="products-catalog__price">690 руб.</span>
+                  <a class="products-catalog__basket" href="#">
+                    <svg class="products-catalog__basket-icon" width="21px" height="18px">
+                      <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </article>
             <article class="products-catalog__item">
@@ -129,7 +140,14 @@
                   <a class="products-catalog__name" href="#">Большая корзинка для игрушек</a>
                 </h1>
                 <p class="products-catalog__feautures">Диаметр 30 см, высота 30 см</p>
-                <p class="products-catalog__price">1 500 руб.</p>
+                <div class="products-catalog__price-block">
+                  <span class="products-catalog__price">1 500 руб.</span>
+                  <a class="products-catalog__basket" href="#">
+                    <svg class="products-catalog__basket-icon" width="21px" height="18px">
+                      <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </article>
           </div>
@@ -137,15 +155,20 @@
           <section class="products-video">
             <div class="products-video__wrapper">
               <h2 class="products-video__title">Процесс производства</h2>
-              <picture>
-                <source type="image/webp" media="(min-width: 1250px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+              <div class="products-video__video-block">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1250px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1250px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-                <img class="products-video__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="">
-              </picture>
+                  <source media="(min-width: 1250px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                  <img class="products-video__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="">
+                </picture>
+                <!-- как реализовать увеличение и расположение кнопки -->
+                <button class="products-video__play-btn" type="button" name="play-button"></button>
+              </div>
+              <!-- как сделать тень только описанию, если на разных версиях текст и картинки перемешиваются -->
               <p class="products-video__descr">
                 По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
               </p>
