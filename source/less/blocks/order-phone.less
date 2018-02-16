@@ -1,10 +1,8 @@
 .order-phone{
-  outline: 3px solid red;
   width: 320px;
   margin: 0 auto;
 
   .order-phone__wrapper{
-    outline: 4px solid green;
     width: 260px;
     margin: 0 auto;
   }
@@ -15,6 +13,20 @@
     color: @order-title-color;
     font-weight: bold;
     font-family: 'OpenSans', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 8px;
+  }
+  .order-phone__title::after{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 62px;
+    border: none;
+    background-color: @order-title-color;
+    width: 198px;
+    height: 1px;
   }
   .order-phone__number-field{
     font-size: 17px;
@@ -24,10 +36,29 @@
     font-family: 'OpenSans', sans-serif;
     outline: none;
     width: 260px;
-    padding: 16px 0;
+    padding: 16px 0px;
     border: none;
     border-bottom: 2px solid @dark-text-color;
+    position: relative;
+    box-sizing: border-box;
+    background: url(../img/icon-phone.svg) no-repeat;
+    background-position: 96% 50%;
   }
+  .order-phone__number-field:focus{
+    border-bottom: 2px solid @order-form-icons-color;
+    background: url(../img/icon-phone-active.svg) no-repeat;
+    background-position: 96% 50%;
+  }
+  .order-phone__number-field:hover{
+    border-bottom: 2px solid @order-form-icons-color;
+    background: url(../img/icon-phone-active.svg) no-repeat;
+    background-position: 96% 50%;
+  }
+
+  .order-phone__number-field::-webkit-input-placeholder {opacity: 0.3;}
+  .order-phone__number-field::-moz-placeholder          {opacity: 0.3;}
+  .order-phone__number-field:-moz-placeholder           {opacity: 0.3;}
+  .order-phone__number-field:-ms-input-placeholder      {opacity: 0.3;}
 
   @media (min-width: @tablet-width){
     width: auto;
@@ -37,14 +68,28 @@
     .order-phone__wrapper{
       width: 498px;
       padding-left: 168px;
+      padding-top: 34px;
+      // padding-bottom: 50px;
     }
 
     .order-phone__title{
       margin-left: -168px;
-      margin-bottom: -16px;
+      margin-bottom: -38px;
+    }
+    .order-phone__title::after{
+      display: none;
     }
     .order-phone__number-field{
+      font-size: 19px;
       width: 500px;
+      padding: 16px 16px;
+      background-position: 94% 50%;
+    }
+    .order-phone__number-field:focus{
+      background-position: 94% 50%;
+    }
+    .order-phone__number-field:hover{
+      background-position: 94% 50%;
     }
   }
 

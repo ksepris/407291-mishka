@@ -1,10 +1,8 @@
 .order-email{
-  outline: 3px solid red;
   width: 320px;
   margin: 0 auto;
 
   .order-email__wrapper{
-    outline: 4px solid green;
     width: 260px;
     margin: 0 auto;
   }
@@ -15,6 +13,20 @@
     color: @order-title-color;
     font-weight: bold;
     font-family: 'OpenSans', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 32px;
+    margin-bottom: 8px;
+  }
+  .order-email__title::after{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 81px;
+    border: none;
+    background-color: @order-title-color;
+    width: 179px;
+    height: 1px;
   }
   .order-email__address-field{
     font-size: 17px;
@@ -24,10 +36,29 @@
     font-family: 'OpenSans', sans-serif;
     outline: none;
     width: 260px;
-    padding: 16px 0;
+    padding: 16px 0px;
     border: none;
     border-bottom: 2px solid @dark-text-color;
+    position: relative;
+    box-sizing: border-box;
+    background: url(../img/icon-mail.svg) no-repeat;
+    background-position: 98% 50%;
   }
+  .order-email__address-field:focus{
+    border-bottom: 2px solid @order-form-icons-color;
+    background: url(../img/icon-mail-active.svg) no-repeat;
+    background-position: 98% 50%;
+  }
+  .order-email__address-field:hover{
+    border-bottom: 2px solid @order-form-icons-color;
+    background: url(../img/icon-mail-active.svg) no-repeat;
+    background-position: 98% 50%;
+  }
+
+  .order-email__address-field::-webkit-input-placeholder {opacity: 0.3;}
+  .order-email__address-field::-moz-placeholder          {opacity: 0.3;}
+  .order-email__address-field:-moz-placeholder           {opacity: 0.3;}
+  .order-email__address-field:-ms-input-placeholder      {opacity: 0.3;}
 
   @media (min-width: @tablet-width){
     width: auto;
@@ -37,14 +68,28 @@
     .order-email__wrapper{
       width: 498px;
       padding-left: 168px;
+      padding-top: 8px;
+      padding-bottom: 48px;
     }
 
     .order-email__title{
       margin-left: -168px;
-      margin-bottom: -16px;
+      margin-bottom: -38px;
+    }
+    .order-email__title::after{
+      display: none;
     }
     .order-email__address-field{
+      font-size: 19px;
       width: 500px;
+      padding: 16px 15px;
+      background-position: 95% 50%;
+    }
+    .order-email__address-field:focus{
+      background-position: 95% 50%;
+    }
+    .order-email__address-field:hover{
+      background-position: 95% 50%;
     }
   }
 
