@@ -98,6 +98,9 @@
       padding-top: 36px;
       padding-bottom: 26px;
     }
+    .order-colors__flex{
+      width: 500px;
+    }
 
     .order-colors__title{
       margin-left: -168px;
@@ -105,7 +108,10 @@
     }
     .order-colors__item{
       width: 210px;
-      margin-right: 36px;
+
+    }
+    .order-colors__item:nth-child(2n+1){
+      margin-right: 52px;
     }
     .order-colors__flex{
       display: flex;
@@ -136,16 +142,26 @@
   @media (min-width: @desktop-width){
     .order-colors__wrapper{
       width: 686px;
-      padding-left: 174px;
+      padding-top: 34px;
+      padding-left: 178px;
       padding-right: 190px;
     }
 
+    .order-colors__flex{
+      width: 875px;
+    }
+
     .order-colors__title{
-      margin-left: -110px;
-      margin-bottom: -16px;
+      margin-left: -116px;
+      margin-bottom: -32px;
+    }
+    .order-colors__item:nth-child(2n+1){
+      margin-right: 42px;
     }
     .order-colors__item{
       width: 220px;
+      margin-right: 42px;
     }
+
   }
 }
