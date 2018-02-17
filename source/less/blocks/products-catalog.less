@@ -16,9 +16,7 @@
   }
   .products-catalog__descr{
     padding: 26px 26px;
-    // padding-bottom: 78px;
     border: 1px solid @list-border-color;
-    // position: relative;
   }
   .products-catalog__price-block{
     display: flex;
@@ -27,9 +25,6 @@
     border-top: 1px solid @list-border-color;
     padding-top: 22px;
     margin-top: 18px;
-    // position: absolute;
-    // width: 206px;
-    // top: 104px;
   }
   .products-catalog__price{
     font-size: 15px;
@@ -105,10 +100,6 @@
       flex-wrap: wrap;
       margin-bottom: 54px;
     }
-    // .products-catalog__item picture{
-    //   margin: 0;
-    //   padding: 0;
-    // }
     .products-catalog__name{
       width: 240px;
       font-size: 20px;
@@ -121,7 +112,6 @@
     }
     .products-catalog__price-block{
       width: 268px;
-      // margin: 0 auto;
       margin-top: 0px;
       position: absolute;
       top: 258px;
@@ -138,7 +128,7 @@
   }
 
   @media (min-width: @desktop-width){
-    padding-top: 134px;
+    padding-top: 132px;
 
     .products-catalog__wrapper{
       width: 1050px;
@@ -147,24 +137,24 @@
     }
 
     .products-catalog__descr{
-      padding: 27px 25px;
-      padding-bottom: 82px;
+      padding: 23px 25px;
+      padding-bottom: 72px;
       margin-top: 0;
+      flex-grow: 1;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .products-catalog__item{
       width: 316px;
-      margin-bottom: 58px;
+      margin-bottom: 56px;
+      flex-direction: column;
     }
     .products-catalog__name{
       width: 264px;
     }
     .products-catalog__feautures{
       margin-top: 8px;
-    }
-    .products-catalog__price{
-      // top: 112px;
-      // left: 26px;
     }
     .products-catalog__price-block{
       width: 256px;
@@ -177,11 +167,5 @@
       font-size: 0;
       line-height: 0;
     }
-    // .products-catalog__item-wrapper picture{
-    //   margin: 0;
-    //   padding: 0;
-    //   font-size: 0;
-    //   line-height: 0;
-    // }
   }
 }
