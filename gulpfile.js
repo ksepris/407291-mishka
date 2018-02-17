@@ -72,16 +72,16 @@ gulp.task("serve", function() {
   gulp.watch("source/*.html", ["html"]);
 });
 
-// gulp.task("build", function(done){
-//   run(
-//    // "clean",
-//    // "copy",
-//    "style",
-//    "sprite",
-//    "html",
-//    done
-//  );
-// });
+gulp.task("build", function(done){
+  run(
+   // "clean",
+   // "copy",
+   "style",
+   "sprite",
+   "html",
+   done
+ );
+});
 
 // gulp.task("copy", function () {
 //   return gulp.src([
