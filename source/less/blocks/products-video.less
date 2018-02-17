@@ -10,12 +10,12 @@
     padding-bottom: 34px;
     margin-bottom: 56px;
   }
-  .products-video__wrapper:hover{
-    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
-  }
-  .products-video__wrapper:active{
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
-  }
+  // .products-video__wrapper:hover{
+  //   box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  // }
+  // .products-video__wrapper:active{
+  //   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  // }
   .products-video__title{
     font-size: 17px;
     line-height: 24px;
@@ -45,10 +45,28 @@
     margin: 0 34px;
     margin-top: 23px;
     margin-bottom: 25px;
+    position: relative;
+    z-index: 20;
+  }
+  .products-video__descr::after{
+    content: '';
+    position: absolute;
+    top: -26px;
+    left: -34px;
+    width: 260px;
+    height: 257px;
+    z-index: 10;
+  }
+  .products-video__descr:hover::after{
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  .products-video__descr:active::after{
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
   }
   .products-video__make-order{
     width: 190px;
     margin: 0 auto;
+    z-index: 20;
   }
   .products-video__play-btn{
     display: block;
@@ -90,7 +108,7 @@
       order: 2;
       font-size: 20px;
       padding-left: 106px;
-      margin-top: 36px;
+      margin-top: 32px;
       margin-bottom: 12px;
     }
     .products-video__title::before{
@@ -112,6 +130,17 @@
       order: 4;
       width: 582px;
       margin-bottom: 12px;
+    }
+    .products-video__play-btn{
+      top: 40%;
+      left: 42%;
+    }
+    .products-video__descr::after{
+      top: -96px;
+      left: -40px;
+      width: 668px;
+      height: 288px;
+      z-index: 10;
     }
   }
 
@@ -148,6 +177,18 @@
     .products-video__make-order{
       width: 226px;
       margin-bottom: 26px;
+    }
+
+    .products-video__play-btn{
+      top: 188px;
+      left: 290px;
+    }
+    .products-video__descr::after{
+      top: -178px;
+      left: -78px;
+      width: 368px;
+      height: 455px;
+      z-index: 10;
     }
   }
 }

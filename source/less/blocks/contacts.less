@@ -2,6 +2,18 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 28px;
+  position: relative;
+
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 6px;
+    background: url(../img/bg-zigzag-line.svg) repeat;
+    display: block;
+  }
 
   .contacts__wrapper{
     width: 260px;
@@ -62,6 +74,7 @@
     width: auto;
     margin: 0;
     position: relative;
+    padding-top: 40px;
 
     &:before{
       content: '';
@@ -69,7 +82,7 @@
       top: 0px;
       left: 0px;
       width: 100%;
-      height: 23px;
+      height: 14px;
       background: url(../img/bg-zigzag-line.svg) repeat;
       display: block;
     }
@@ -115,23 +128,23 @@
       margin-top: 18px;
       margin-left: 50px;
     }
-    .contacts__map{
+    .contacts__map-block{
       margin-top: 18px;
-      margin: 0 auto;
     }
     .contacts__write-us{
       width: 226px;
-      margin-top: 54px;
+      margin-top: 50px;
       margin-bottom: 56px;
     }
   }
   @media (min-width: @desktop-width){
     position: relative;
-    padding-top: 54px;
+    padding-top: 64px;
     padding-left: 209px;
 
     &:before{
-      top: -70px;
+      top: -54px;
+      height: 20px;
     }
 
     .contacts__wrapper{
@@ -144,8 +157,8 @@
       width: 876px;
     }
     .contacts__title::after{
-      top: -10px;
-      left: -110px;
+      top: -8px;
+      left: -106px;
     }
     .contacts__email{
       width: 876px;
@@ -158,14 +171,14 @@
     }
     .contacts__map-block{
       position: absolute;
-      top: 10px;
-      right: 98px;
+      top: 20px;
+      right: 144px;
     }
     .contacts__write-us{
       margin: 0;
-      margin-top: 38px;
+      margin-top: 40px;
       margin-bottom: 106px;
-      margin-left: 66px;
+      margin-left: 110px;
     }
     .contacts__map-google{
       width: 525px;
