@@ -12,28 +12,28 @@
     line-height: 16px;
     color: @order-title-color;
     font-weight: bold;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     text-transform: uppercase;
     position: relative;
     margin-top: 30px;
     margin-bottom: 8px;
-  }
-  .order-phone__title::after{
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 62px;
-    border: none;
-    background-color: @order-title-color;
-    width: 198px;
-    height: 1px;
+    &::after{
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 62px;
+      border: none;
+      background-color: @order-title-color;
+      width: 198px;
+      height: 1px;
+    }
   }
   .order-phone__number-field{
     font-size: 17px;
     line-height: 18px;
     color: @light-text-color;
     font-weight: normal;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     outline: none;
     width: 260px;
     padding: 16px 0px;
@@ -66,17 +66,20 @@
     background-color: @bottom-header-background-color-noimg;
 
     .order-phone__wrapper{
-      width: 498px;
-      padding-left: 168px;
-      padding-top: 34px;
+      width: 668px;
+      padding-top: 43px;
+      display: flex;
+      align-items: flex-start;
     }
 
     .order-phone__title{
-      margin-left: -168px;
-      margin-bottom: -38px;
+      margin-top: 24px;
+      &::after{
+        display: none;
+      }
     }
-    .order-phone__title::after{
-      display: none;
+    .order-phone__content{
+      margin-left: 136px;
     }
     .order-phone__number-field{
       font-size: 19px;
@@ -94,12 +97,15 @@
 
   @media (min-width: @desktop-width){
     .order-phone__wrapper{
-      width: 686px;
-      padding-top: 38px;
-      padding-left: 174px;
-      padding-right: 190px;
+      width: 817px;
+      padding-top: 45px;
+      padding-left: 66px;
+      padding-right: 175px;
     }
 
+    .order-phone__content{
+      margin-left: 80px;
+    }
     .order-phone__number-field{
       width: 700px;
       padding-right: 0;
@@ -111,9 +117,6 @@
     .order-phone__number-field:hover{
       background-position: 99% 50%;
     }
-    .order-phone__title{
-      margin-left: -110px;
-      margin-bottom: -40px;
-    }
+
   }
 }

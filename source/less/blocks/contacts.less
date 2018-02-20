@@ -4,7 +4,7 @@
   padding-top: 28px;
   position: relative;
 
-  &:before{
+  &::before{
     content: '';
     position: absolute;
     top: 0px;
@@ -25,7 +25,7 @@
     line-height: 30px;
     color: @dark-text-color;
     font-weight: bold;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     margin-bottom: 26px;
   }
   .contacts__email, .contacts__address{
@@ -33,7 +33,7 @@
     line-height: 30px;
     color: @light-text-color;
     font-weight: normal;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
   }
   .contacts__email a{
     border-bottom: 1px solid @link-color;
@@ -90,7 +90,7 @@
     position: relative;
     padding-top: 40px;
 
-    &:before{
+    &::before{
       content: '';
       position: absolute;
       top: 0px;
@@ -113,15 +113,15 @@
       width: 500px;
       position: relative;
       margin-bottom: 32px;
-    }
-    .contacts__title::after{
-      content: '';
-      position: absolute;
-      top: -16px;
-      left: 618px;
-      width: 47px;
-      height: 81px;
-      background-image: url(../img/icon-flag.svg);
+      &::after{
+        content: '';
+        position: absolute;
+        top: -16px;
+        left: 618px;
+        width: 47px;
+        height: 81px;
+        background-image: url(../img/icon-flag.svg);
+      }
     }
     .contacts__email, .contacts__address{
       font-size: 17px;
@@ -167,7 +167,7 @@
     padding-left: 209px;
     padding-bottom: 198px;
 
-    &:before{
+    &::before{
       top: -54px;
       height: 20px;
     }
@@ -180,10 +180,10 @@
       font-size: 53px;
       line-height: 57px;
       width: 876px;
-    }
-    .contacts__title::after{
-      top: -8px;
-      left: -106px;
+      &::after{
+        top: -8px;
+        left: -106px;
+      }
     }
     .contacts__email{
       width: 876px;
@@ -215,7 +215,6 @@
       margin: 0;
       margin-top: 40px;
       margin-bottom: 106px;
-      // margin-left: 110px;
       position: absolute;
       left: 57.5%;
       transform: translateX(-450px);

@@ -39,7 +39,7 @@
               <img class="top-header__logo-image" src="img/logo-mobile.svg" alt="Мишка">
             </picture>
           </a>
-          <nav class="main-nav main-nav--closed">
+          <nav class="main-nav main-nav--opened">
             <button class="main-nav__toggle" type="button"></button>
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
@@ -80,16 +80,18 @@
         <div class="order-types">
           <div class="order-types__wrapper">
             <h2 class="order-types__title">Тип</h2>
-            <label>
-              <input class="order-types__radio" type="radio" name="type" value="interior" id="interior" checked="">
-              <span class="order-types__radio-custom"></span>
-              <span class="order-types__radio-label">Аксессуар для интерьера</span>
-            </label>
-            <label>
-              <input class="order-types__radio" type="radio" name="type" value="toy" id="toy">
-              <span class="order-types__radio-custom"></span>
-              <span class="order-types__radio-label">Детская игрушка</span>
-            </label>
+            <div class="order-types__content">
+              <label>
+                <input class="order-types__radio" type="radio" name="type" value="interior" id="interior" checked="">
+                <span class="order-types__radio-custom"></span>
+                <span class="order-types__radio-label">Аксессуар для интерьера</span>
+              </label>
+              <label>
+                <input class="order-types__radio" type="radio" name="type" value="toy" id="toy">
+                <span class="order-types__radio-custom"></span>
+                <span class="order-types__radio-label">Детская игрушка</span>
+              </label>
+            </div>
           </div>
         </div>
         <div class="order-colors">
@@ -132,37 +134,39 @@
         <div class="order-customer">
           <div class="order-customer__wrapper">
             <h2 class="order-customer__title">ФИО</h2>
-            <div class="order-customer__item">
-              <label class="order-customer__name">Имя:
-                <input class="order-customer__name-field" type="text" name="name" placeholder="Введите ваше имя*">
-              </label>
-            </div>
-            <div class="order-customer__item">
-              <label class="order-customer__surname">Фамилия:
-                <input class="order-customer__surname-field" type="text" name="surname" placeholder="Укажите фамилию*">
-              </label>
-            </div>
-            <div class="order-customer__item">
-              <label class="order-customer__fathername">Отчество:
-                <input class="order-customer__fathername-field" type="text" name="fathername" placeholder="Отчество, если желаете">
-              </label>
+            <div class="order-customer__content">
+              <div class="order-customer__item">
+                <label class="order-customer__name">Имя:
+                  <input class="order-customer__name-field" type="text" name="name" placeholder="Введите ваше имя*">
+                </label>
+              </div>
+              <div class="order-customer__item">
+                <label class="order-customer__surname">Фамилия:
+                  <input class="order-customer__surname-field" type="text" name="surname" placeholder="Укажите фамилию*">
+                </label>
+              </div>
+              <div class="order-customer__item">
+                <label class="order-customer__fathername">Отчество:
+                  <input class="order-customer__fathername-field" type="text" name="fathername" placeholder="Отчество, если желаете">
+                </label>
+              </div>
             </div>
           </div>
         </div>
         <div class="order-phone">
           <div class="order-phone__wrapper">
             <h2 class="order-phone__title">Тел</h2>
-            <label>
+            <div class="order-phone__content">
               <input class="order-phone__number-field" type="text" name="phone" placeholder="+7 XXX XX XX*">
-            </label>
+            </div>
           </div>
         </div>
         <div class="order-email">
           <div class="order-email__wrapper">
             <h2 class="order-email__title">E-mail</h2>
-            <label>
+            <div class="order-email__content">
               <input class="order-email__address-field" type="text" name="email" placeholder="Ваш email*">
-            </label>
+            </div>
           </div>
         </div>
         <div class="order-extra">

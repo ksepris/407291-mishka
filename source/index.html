@@ -39,7 +39,7 @@
               <img class="top-header__logo-image" src="img/logo-mobile.svg" alt="Мишка">
             </picture>
           </a>
-          <nav class="main-nav main-nav--closed">
+          <nav class="main-nav main-nav--opened">
             <button class="main-nav__toggle" type="button"></button>
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
@@ -91,9 +91,18 @@
               Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
             </p>
             <div class="product__features">
-              <p class="product__feature">Цвет:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;«Тиффани»/серый</p>
-              <p class="product__feature">Диаметр:&ensp;&ensp;&ensp;&ensp;25 см</p>
-              <p class="product__feature">Высота:&ensp;&ensp;&ensp;&ensp;&ensp;15 см</p>
+              <div class="product__feature">
+                <span class="product__feature-name">Цвет:</span>
+                <span class="product__feature-value">«Тиффани»/серый</span>
+              </div>
+              <div class="product__feature">
+                <span class="product__feature-name">Диаметр:</span>
+                <span class="product__feature-value">25 см</span>
+              </div>
+              <div class="product__feature">
+                <span class="product__feature-name">Высота:</span>
+                <span class="product__feature-value">15 см</span>
+              </div>
             </div>
             <picture>
               <source type="image/webp" media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
@@ -214,7 +223,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-content">
+    <div class="modal-content modal-content--opened">
       <div class="modal-content__title">Добавить в корзину</div>
       <p class="modal-content__descr">Выберите размер:</p>
       <div class="modal-content__sizes">
