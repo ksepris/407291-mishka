@@ -18,7 +18,7 @@
     line-height: 30px;
     color: @dark-text-color;
     font-weight: bold;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     text-align: center;
     background-image: url(../img/hero-mobile@1x.jpg);
     background-size: 575px auto;
@@ -26,7 +26,7 @@
     padding-top: 73px;
     padding-bottom: 119px;
     margin: 0 auto;
-    width: 244px;
+    width: 250px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -64,7 +64,7 @@
       line-height: 50px;
       width: 500px;
       padding-top: 104px;
-      padding-bottom: 373px;
+      padding-bottom: 374px;
       background-image: url(../img/hero-tablet@1x.jpg);
       background-size: 1150px auto;
       background-position: 50% 30%;
@@ -77,27 +77,26 @@
     }
     .bottom-header__menu{
       margin-top: 0px;
-    }
-    .bottom-header__menu:after{
-      content: '';
-      position: absolute;
-      top: 734px;
-      left: 0px;
-      width: 100%;
-      height: 18px;
-      background: url(../img/bg-zigzag-fill.svg) repeat;
-      display: block;
+      &::after{
+        content: '';
+        position: absolute;
+        top: 734px;
+        left: 0px;
+        width: 100%;
+        height: 20px;
+        background: url(../img/bg-zigzag-fill.svg) repeat;
+        display: block;
+      }
     }
 
     .bottom-header__title--nobcg{
       background: none;
       padding-top: 45px;
       padding-bottom: 86px;
-
-      &:after{
+      &::after{
         content: '';
         position: absolute;
-        top: 216px;
+        top: 215px;
         left: 0px;
         width: 100%;
         height: 23px;
@@ -131,27 +130,27 @@
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
-      background-size: 2300px auto;
-      background-size: cover;
+      background-size: 1150px auto;
       }
     }
-    .bottom-header__menu:after{
+    .bottom-header__menu{
+      &::after{
       top: 728px;
       left: 0px;
       width: 100%;
       height: 34px;
+      }
     }
 
     .bottom-header__title--nobcg{
       background: none;
       padding-top: 45px;
       padding-bottom: 100px;
-
-      &:after{
+      &::after{
         top: 238px;
         left: 0px;
         width: 100%;
-        height: 23px;
+        height: 34px;
         background: url(../img/bg-zigzag-fill.svg) repeat;
         display: block;
       }

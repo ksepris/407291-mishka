@@ -12,21 +12,21 @@
     line-height: 16px;
     color: @order-title-color;
     font-weight: bold;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     text-transform: uppercase;
     position: relative;
     margin-top: 32px;
     margin-bottom: 24px;
-  }
-  .order-extra__title::after{
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 62px;
-    border: none;
-    background-color: @order-title-color;
-    width: 198px;
-    height: 1px;
+    &::after{
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 62px;
+      border: none;
+      background-color: @order-title-color;
+      width: 198px;
+      height: 1px;
+    }
   }
 
   .order-extra__text-field{
@@ -34,7 +34,7 @@
     line-height: 18px;
     color: @light-text-color;
     font-weight: normal;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     outline: none;
     width: 226px;
     height: 108px;
@@ -60,40 +60,38 @@
     margin-bottom: 0px;
 
     .order-extra__wrapper{
-      width: 498px;
-      padding-left: 168px;
-      padding-top: 36px;
+      width: 668px;
+      padding-top: 50px;
       padding-bottom: 50px;
+      display: flex;
+      align-items: flex-start;
     }
 
     .order-extra__title{
-      margin-left: -168px;
-      margin-bottom: -34px;
-    }
-    .order-extra__title::after{
-      display: none;
+      margin-top: 18px;
+      &::after{
+        display: none;
+      }
     }
     .order-extra__text-field{
       font-size: 19px;
       width: 466px;
+      margin-left: 128px;
     }
   }
 
   @media (min-width: @desktop-width){
     .order-extra__wrapper{
-      width: 686px;
-      padding-top: 38px;
-      padding-left: 174px;
-      padding-right: 190px;
+      width: 817px;
+      padding-left: 66px;
+      padding-top: 50px;
+      padding-right: 175px;
       padding-bottom: 46px;
     }
 
     .order-extra__text-field{
       width: 668px;
-    }
-    .order-extra__title{
-      margin-left: -112px;
-      margin-bottom: -36px;
+      margin-left: 74px;
     }
   }
 }

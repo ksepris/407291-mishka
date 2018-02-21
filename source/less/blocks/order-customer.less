@@ -15,28 +15,28 @@
     line-height: 16px;
     color: @order-title-color;
     font-weight: bold;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     text-transform: uppercase;
     position: relative;
     margin-top: 30px;
     margin-bottom: 29px;
-  }
-  .order-customer__title::after{
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 62px;
-    border: none;
-    background-color: @order-title-color;
-    width: 198px;
-    height: 1px;
+    &::after{
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 62px;
+      border: none;
+      background-color: @order-title-color;
+      width: 198px;
+      height: 1px;
+    }
   }
   .order-customer__name, .order-customer__surname, .order-customer__fathername{
     font-size: 17px;
     line-height: 18px;
     color: @dark-text-color;
     font-weight: bold;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     margin-top: 30px;
   }
   .order-customer__name-field, .order-customer__surname-field, .order-customer__fathername-field {
@@ -44,7 +44,7 @@
     line-height: 18px;
     color: @light-text-color;
     font-weight: normal;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     outline: none;
     width: 260px;
     padding: 16px 0px;
@@ -78,18 +78,21 @@
     margin: 0;
 
     .order-customer__wrapper{
-      width: 498px;
-      padding-left: 168px;
-      padding-top: 34px;
+      width: 668px;
+      padding-top: 44px;
       padding-bottom: 30px;
+      display: flex;
+      align-items: flex-start;
     }
 
     .order-customer__title{
-      margin-left: -168px;
-      margin-bottom: -36px;
+      margin-top: 22px;
+      &::after{
+        display: none;
+      }
     }
-    .order-customer__title::after{
-      display: none;
+    .order-customer__content{
+      margin-left: 126px;
     }
     .order-customer__name-field{
       width: 394px;
@@ -119,14 +122,13 @@
 
   @media (min-width: @desktop-width){
     .order-customer__wrapper{
-      width: 686px;
-      padding-left: 166px;
+      width: 811px;
+      padding-top: 46px;
+      padding-left: 58px;
       padding-right: 175px;
     }
-
-    .order-customer__title{
-      margin-left: -116px;
-      margin-bottom: -36px;
+    .order-customer__content{
+      margin-left: 72px;
     }
     .order-customer__name-field{
       width: 608px;
@@ -136,9 +138,11 @@
     .order-customer__surname-field{
       width: 558px;
       padding-right: 0;
+      margin-left: 20px;
     }
     .order-customer__fathername-field{
       width: 542px;
+      margin-left: 22px;
     }
     .order-customer__item{
       width: 700px;

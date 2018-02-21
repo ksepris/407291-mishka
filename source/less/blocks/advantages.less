@@ -13,7 +13,7 @@
     line-height: 30px;
     color: @dark-text-color;
     font-weight: bold;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
   }
   .advantages__list{
     margin: 0;
@@ -26,19 +26,21 @@
     line-height: 20px;
     color: @dark-text-color;
     font-weight: bold;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     width: 250px;
     padding-top: 62px;
     padding-bottom: 0px;
     margin-bottom: 21px;
-  }
-  .advantages__item::before{
-    content: '';
-    position: absolute;
+
+    &::before{
+      content: '';
+      position: absolute;
+    }
   }
 
+
   .advantages__item--materials{
-    width: 200px;
+    width: 174px;
     &::before{
       top: 10px;
       left: 10px;
@@ -49,6 +51,7 @@
   }
 
   .advantages__item--style{
+    width: 200px;
     &::before{
       top: 10px;
       left: 0px;
@@ -59,6 +62,7 @@
   }
 
   .advantages__item--likes{
+    width: 180px;
     &::before{
       top: 14px;
       left: 7px;
@@ -121,6 +125,18 @@
       padding-top: 64px;
       margin-bottom: 48px;
     }
+    .advantages__item--materials{
+      width: 205px;
+    }
+    .advantages__item--style{
+      width: 236px;
+    }
+    .advantages__item--likes{
+      width: 214px;
+    }
+    .advantages__item--gift{
+      width: 234px;
+    }
     .advantages__list{
       display: flex;
       flex-wrap: wrap;
@@ -137,15 +153,15 @@
     }
     .advantages__item:nth-child(4){
       order: 2;
-      margin-left: 35px;
+      margin-left: 130px;
     }
     .advantages__item:nth-child(5){
       order: 4;
-      margin-left: 35px;
+      margin-left: 99px;
     }
     .advantages__item:nth-child(6){
       order: 6;
-      margin-left: 35px;
+      margin-left: 120px;
       padding-top: 62px;
     }
   }
@@ -162,16 +178,14 @@
       font-size: 53px;
       line-height: 57px;
     }
-    .advantages__list{
-    }
     .advantages__item:nth-child(4){
-      margin-left: 52px;
+      margin-left: 144px;
     }
     .advantages__item:nth-child(5){
-      margin-left: 52px;
+      margin-left: 114px;
     }
     .advantages__item:nth-child(6){
-      margin-left: 52px;
+      margin-left: 134px;
     }
   }
 }
