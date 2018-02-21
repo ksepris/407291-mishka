@@ -34,12 +34,12 @@
         <div class="top-header__wrapper">
           <a class="top-header__logo">
             <picture>
-              <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img class="top-header__logo-image" src="img/logo-mobile.svg" alt="Мишка">
             </picture>
           </a>
-          <nav class="main-nav main-nav--opened">
+          <nav class="main-nav main-nav--closed">
             <button class="main-nav__toggle" type="button"></button>
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
@@ -105,11 +105,11 @@
               </div>
             </div>
             <picture>
-              <source type="image/webp" media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img class="product__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="">
             </picture>
@@ -167,7 +167,7 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
-          <p class="contacts__email">e-mail:&ensp;&ensp;&ensp;&ensp;<a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
+          <p class="contacts__email">e-mail:<a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
           <div class="contacts__address">
             <span>адрес:</span>
             <p class="contacts__address-place">
@@ -223,7 +223,8 @@
         </div>
       </div>
     </footer>
-    <div class="modal-content modal-content--closed">
+    <div class="modal-content-bcg modal-content--opened"></div>
+    <div class="modal-content modal-content--opened">
       <div class="modal-content__title">Добавить в корзину</div>
       <form class="modal-content__form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="modal-content__descr">Выберите размер:</p>
