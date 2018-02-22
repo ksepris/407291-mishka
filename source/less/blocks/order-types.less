@@ -46,15 +46,17 @@
     border-color: #62d1ba;
   }
   .order-types__radio-custom:active{
-    border-color: #444444;
-    opacity: 0.3;
+    border-color: #c7c7c7;
   }
   .order-types__radio-custom,
   .order-types__radio-label {
   	display: inline-block;
   	vertical-align: middle;
   }
-
+  .order-types__radio-label-acs{
+    vertical-align: bottom;
+    display: inline-block;
+  }
   .order-types__radio:checked + .order-types__radio-custom::before {
   	content: "";
   	display: block;
@@ -70,7 +72,7 @@
   	border-radius: 50%;
   }
 
-  .order-types__radio-label{
+  .order-types__radio-label, .order-types__radio-label-acs{
     font-size: 17px;
     line-height: 18px;
     color: @dark-text-color;
@@ -107,7 +109,7 @@
     	width: 48px;
     	height: 48px;
     }
-    .order-types__radio-label{
+    .order-types__radio-label, .order-types__radio-label-acs{
       font-size: 19px;
       width: 256px;
       margin-left: 22px;
@@ -132,7 +134,7 @@
     .order-types__content{
       margin-left: 74px;
     }
-    .order-types__radio-label{
+    .order-types__radio-label, .order-types__radio-label-acs{
       margin-left: 24px;
     }
   }
