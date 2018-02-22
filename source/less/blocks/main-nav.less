@@ -12,9 +12,16 @@
     padding: 0;
     border: none;
     cursor: pointer;
-  }
-  .main-nav__toggle--nojs{
     display: none;
+  }
+  // .main-nav__toggle--nojs{
+  //   display: none;
+  // }
+  // .main-nav__toggle--visible{
+  //   display: block;
+  // }
+  .main-nav__toggle--visible{
+    display: block;
   }
 
   @media (max-width: @mobile-width-only){
@@ -53,5 +60,11 @@
     background: url(../img/icon-menu-close.svg);
     width: 21px;
     height: 20px;
+  }
+
+  @media (max-width: @mobile-width-only){
+    .main-nav__list{
+      display: block;
+    }
   }
 }

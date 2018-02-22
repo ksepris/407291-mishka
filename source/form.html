@@ -87,12 +87,12 @@
             <div class="order-types__content">
               <label>
                 <input class="order-types__radio" type="radio" name="type" value="interior" id="interior" checked="">
-                <span class="order-types__radio-custom"></span>
+                <span class="order-types__radio-custom" tabindex="1"></span>
                 <span class="order-types__radio-label">Аксессуар для интерьера</span>
               </label>
               <label>
                 <input class="order-types__radio" type="radio" name="type" value="toy" id="toy">
-                <span class="order-types__radio-custom"></span>
+                <span class="order-types__radio-custom"  tabindex="2"></span>
                 <span class="order-types__radio-label">Детская игрушка</span>
               </label>
             </div>
@@ -104,32 +104,32 @@
             <div class="order-colors__flex">
               <label class="order-colors__item">
                 <input class="order-colors__checkbox" type="checkbox" name="color" value="Белый" id="white" checked="">
-                <span class="order-colors__checkbox-custom"></span>
+                <span class="order-colors__checkbox-custom" tabindex="3"></span>
                 <span class="order-colors__checkbox-label">Белый</span>
               </label>
               <label class="order-colors__item">
                 <input class="order-colors__checkbox" type="checkbox" name="color" value="Серый" id="grey" checked="">
-                <span class="order-colors__checkbox-custom"></span>
+                <span class="order-colors__checkbox-custom" tabindex="4"></span>
                 <span class="order-colors__checkbox-label">Серый</span>
               </label>
               <label class="order-colors__item">
                 <input class="order-colors__checkbox" type="checkbox" name="color" value="Тиффани" id="tiffany" checked="">
-                <span class="order-colors__checkbox-custom"></span>
+                <span class="order-colors__checkbox-custom" tabindex="5"></span>
                 <span class="order-colors__checkbox-label">«Тиффани»</span>
               </label>
               <label class="order-colors__item">
                 <input class="order-colors__checkbox" type="checkbox" name="color" value="Черный" id="black">
-                <span class="order-colors__checkbox-custom"></span>
+                <span class="order-colors__checkbox-custom" tabindex="6"></span>
                 <span class="order-colors__checkbox-label">Черный</span>
               </label>
               <label class="order-colors__item">
                 <input class="order-colors__checkbox" type="checkbox" name="color" value="Розовый" id="pink">
-                <span class="order-colors__checkbox-custom"></span>
+                <span class="order-colors__checkbox-custom" tabindex="7"></span>
                 <span class="order-colors__checkbox-label">Розовый</span>
               </label>
               <label class="order-colors__item">
                 <input class="order-colors__checkbox" type="checkbox" name="color" value="Оранжевый" id="orange">
-                <span class="order-colors__checkbox-custom"></span>
+                <span class="order-colors__checkbox-custom" tabindex="8"></span>
                 <span class="order-colors__checkbox-label">Оранжевый</span>
               </label>
             </div>
@@ -141,17 +141,17 @@
             <div class="order-customer__content">
               <div class="order-customer__item">
                 <label class="order-customer__name">Имя:
-                  <input class="order-customer__name-field" type="text" name="name" placeholder="Введите ваше имя*">
+                  <input class="order-customer__name-field" type="text" name="name" placeholder="Введите ваше имя*" tabindex="9">
                 </label>
               </div>
               <div class="order-customer__item">
                 <label class="order-customer__surname">Фамилия:
-                  <input class="order-customer__surname-field" type="text" name="surname" placeholder="Укажите фамилию*">
+                  <input class="order-customer__surname-field" type="text" name="surname" placeholder="Укажите фамилию*" tabindex="10">
                 </label>
               </div>
               <div class="order-customer__item">
                 <label class="order-customer__fathername">Отчество:
-                  <input class="order-customer__fathername-field" type="text" name="fathername" placeholder="Отчество, если желаете">
+                  <input class="order-customer__fathername-field" type="text" name="fathername" placeholder="Отчество, если желаете" tabindex="11">
                 </label>
               </div>
             </div>
@@ -161,7 +161,7 @@
           <div class="order-phone__wrapper">
             <h2 class="order-phone__title">Тел</h2>
             <div class="order-phone__content">
-              <input class="order-phone__number-field" type="text" name="phone" placeholder="+7 XXX XX XX*">
+              <input class="order-phone__number-field" type="text" name="phone" placeholder="+7 XXX XX XX*" tabindex="12">
             </div>
           </div>
         </div>
@@ -169,19 +169,19 @@
           <div class="order-email__wrapper">
             <h2 class="order-email__title">E-mail</h2>
             <div class="order-email__content">
-              <input class="order-email__address-field" type="text" name="email" placeholder="Ваш email*">
+              <input class="order-email__address-field" type="text" name="email" placeholder="Ваш email*" tabindex="13">
             </div>
           </div>
         </div>
         <div class="order-extra">
           <div class="order-extra__wrapper">
             <h2 class="order-extra__title">Доп</h2>
-            <textarea class="order-extra__text-field" name="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="order-extra__text-field" name="extra" placeholder="Опишите все ваши пожелания к заказу" tabindex="14"></textarea>
           </div>
         </div>
         <div class="submit-block">
           <p class="submit-block__star"><sup>*</sup>Поля обязательны для заполнения</p>
-          <input type="submit" class="submit-block__btn button" value="Отправить заказ">
+          <input type="submit" class="submit-block__btn button" value="Отправить заказ" tabindex="14">
         </div>
 
       </form>
