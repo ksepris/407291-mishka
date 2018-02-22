@@ -1,13 +1,13 @@
-.order-phone{
+.order-phone {
   width: 320px;
   margin: 0 auto;
 
-  .order-phone__wrapper{
+  .order-phone__wrapper {
     width: 260px;
     margin: 0 auto;
   }
 
-  .order-phone__title{
+  .order-phone__title {
     font-size: 17px;
     line-height: 16px;
     color: @order-title-color;
@@ -17,7 +17,7 @@
     position: relative;
     margin-top: 30px;
     margin-bottom: 8px;
-    &::after{
+    &::after {
       content: '';
       position: absolute;
       top: 8px;
@@ -28,7 +28,7 @@
       height: 1px;
     }
   }
-  .order-phone__number-field{
+  .order-phone__number-field {
     font-size: 17px;
     line-height: 18px;
     color: @light-text-color;
@@ -45,77 +45,92 @@
     background-position: 96% 50%;
     opacity: 1;
   }
-  .order-phone__number-field:focus{
+  .order-phone__number-field:focus {
     border-bottom: 2px solid @order-form-icons-color;
     background: url(../img/icon-phone-active.svg) no-repeat;
     background-position: 96% 50%;
   }
-  .order-phone__number-field:hover{
+  .order-phone__number-field:hover {
     border-bottom: 2px solid @order-form-icons-color;
     background: url(../img/icon-phone-active.svg) no-repeat;
     background-position: 96% 50%;
   }
 
-  .order-phone__number-field::-webkit-input-placeholder {opacity: 0.3;}
-  .order-phone__number-field::-moz-placeholder          {opacity: 0.3;}
-  .order-phone__number-field:-moz-placeholder           {opacity: 0.3;}
-  .order-phone__number-field:-ms-input-placeholder      {opacity: 0.3;}
+  .order-phone__number-field::-webkit-input-placeholder {
+    opacity: 0.3;
+  }
+  .order-phone__number-field::-moz-placeholder {
+    opacity: 0.3;
+  }
+  .order-phone__number-field:-moz-placeholder {
+    opacity: 0.3;
+  }
+  .order-phone__number-field:-ms-input-placeholder {
+    opacity: 0.3;
+  }
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: auto;
     margin: 0;
     background-color: @bottom-header-background-color-noimg;
 
-    .order-phone__wrapper{
+    .order-phone__wrapper {
       width: 668px;
       padding-top: 43px;
       display: flex;
       align-items: flex-start;
     }
 
-    .order-phone__title{
+    .order-phone__title {
       margin-top: 24px;
-      &::after{
+      &::after {
         display: none;
       }
     }
-    .order-phone__content{
+
+    .order-phone__content {
       margin-left: 136px;
     }
-    .order-phone__number-field{
+
+    .order-phone__number-field {
       font-size: 19px;
       width: 500px;
       padding: 16px 16px;
       background-position: 94% 50%;
     }
-    .order-phone__number-field:focus{
+
+    .order-phone__number-field:focus {
       background-position: 94% 50%;
     }
-    .order-phone__number-field:hover{
+
+    .order-phone__number-field:hover {
       background-position: 94% 50%;
     }
   }
 
-  @media (min-width: @desktop-width){
-    .order-phone__wrapper{
+  @media (min-width: @desktop-width) {
+    .order-phone__wrapper {
       width: 817px;
       padding-top: 45px;
       padding-left: 66px;
       padding-right: 175px;
     }
 
-    .order-phone__content{
+    .order-phone__content {
       margin-left: 80px;
     }
-    .order-phone__number-field{
+
+    .order-phone__number-field {
       width: 700px;
       padding-right: 0;
       background-position: 99% 50%;
     }
-    .order-phone__number-field:focus{
+
+    .order-phone__number-field:focus {
       background-position: 99% 50%;
     }
-    .order-phone__number-field:hover{
+
+    .order-phone__number-field:hover {
       background-position: 99% 50%;
     }
 

@@ -1,13 +1,13 @@
-.order-extra{
+.order-extra {
   width: 320px;
   margin: 0 auto;
 
-  .order-extra__wrapper{
+  .order-extra__wrapper {
     width: 260px;
     margin: 0 auto;
   }
 
-  .order-extra__title{
+  .order-extra__title {
     font-size: 17px;
     line-height: 16px;
     color: @order-title-color;
@@ -17,7 +17,7 @@
     position: relative;
     margin-top: 32px;
     margin-bottom: 24px;
-    &::after{
+    &::after {
       content: '';
       position: absolute;
       top: 8px;
@@ -29,7 +29,7 @@
     }
   }
 
-  .order-extra__text-field{
+  .order-extra__text-field {
     font-size: 17px;
     line-height: 18px;
     color: @light-text-color;
@@ -43,24 +43,32 @@
     border: 2px solid @dark-text-color;
     opacity: 1;
   }
-  .order-extra__text-field:focus{
+  .order-extra__text-field:focus {
     border: 2px solid @order-form-icons-color;
   }
-  .order-extra__text-field:hover{
+  .order-extra__text-field:hover {
     border: 2px solid @order-form-icons-color;
   }
 
-  .order-extra__text-field::-webkit-input-placeholder {opacity: 0.3;}
-  .order-extra__text-field::-moz-placeholder          {opacity: 0.3;}
-  .order-extra__text-field:-moz-placeholder           {opacity: 0.3;}
-  .order-extra__text-field:-ms-input-placeholder      {opacity: 0.3;}
+  .order-extra__text-field::-webkit-input-placeholder {
+    opacity: 0.3;
+  }
+  .order-extra__text-field::-moz-placeholder {
+    opacity: 0.3;
+  }
+  .order-extra__text-field:-moz-placeholder {
+    opacity: 0.3;
+  }
+  .order-extra__text-field:-ms-input-placeholder {
+    opacity: 0.3;
+  }
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: auto;
     margin: 0;
     margin-bottom: 0px;
 
-    .order-extra__wrapper{
+    .order-extra__wrapper {
       width: 668px;
       padding-top: 50px;
       padding-bottom: 50px;
@@ -68,21 +76,22 @@
       align-items: flex-start;
     }
 
-    .order-extra__title{
+    .order-extra__title {
       margin-top: 18px;
-      &::after{
+      &::after {
         display: none;
       }
     }
-    .order-extra__text-field{
+
+    .order-extra__text-field {
       font-size: 19px;
       width: 466px;
       margin-left: 128px;
     }
   }
 
-  @media (min-width: @desktop-width){
-    .order-extra__wrapper{
+  @media (min-width: @desktop-width) {
+    .order-extra__wrapper {
       width: 817px;
       padding-left: 66px;
       padding-top: 50px;
@@ -90,7 +99,7 @@
       padding-bottom: 46px;
     }
 
-    .order-extra__text-field{
+    .order-extra__text-field {
       width: 668px;
       margin-left: 74px;
     }

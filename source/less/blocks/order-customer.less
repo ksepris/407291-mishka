@@ -1,16 +1,16 @@
-.order-customer{
+.order-customer {
   width: 320px;
   margin: 0 auto;
 
-  .order-customer__wrapper{
+  .order-customer__wrapper {
     width: 260px;
     margin: 0 auto;
   }
-  .order-customer__item{
+  .order-customer__item {
     margin-bottom: 21px;
   }
 
-  .order-customer__title{
+  .order-customer__title {
     font-size: 17px;
     line-height: 16px;
     color: @order-title-color;
@@ -20,7 +20,7 @@
     position: relative;
     margin-top: 30px;
     margin-bottom: 29px;
-    &::after{
+    &::after {
       content: '';
       position: absolute;
       top: 8px;
@@ -31,7 +31,7 @@
       height: 1px;
     }
   }
-  .order-customer__name, .order-customer__surname, .order-customer__fathername{
+  .order-customer__name, .order-customer__surname, .order-customer__fathername {
     font-size: 17px;
     line-height: 18px;
     color: @dark-text-color;
@@ -52,33 +52,57 @@
     border-bottom: 2px solid @dark-text-color;
     opacity: 1;
   }
-  .order-customer__name-field:focus, .order-customer__surname-field:focus, .order-customer__fathername-field:focus{
+  .order-customer__name-field:focus, .order-customer__surname-field:focus, .order-customer__fathername-field:focus {
     border-bottom: 2px solid @order-form-icons-color;
   }
-  .order-customer__name-field:hover, .order-customer__surname-field:hover, .order-customer__fathername-field:hover{
+  .order-customer__name-field:hover, .order-customer__surname-field:hover, .order-customer__fathername-field:hover {
     border-bottom: 2px solid @order-form-icons-color;
   }
 
-  .order-customer__name-field::-webkit-input-placeholder {opacity: 0.3;}
-  .order-customer__name-field::-moz-placeholder          {opacity: 0.3;}
-  .order-customer__name-field:-moz-placeholder           {opacity: 0.3;}
-  .order-customer__name-field:-ms-input-placeholder      {opacity: 0.3;}
+  .order-customer__name-field::-webkit-input-placeholder {
+    color: #d6d6d6;
+  }
+  .order-customer__name-field::-moz-placeholder {
+    color: #d6d6d6;
+  }
+  .order-customer__name-field:-moz-placeholder {
+    color: #d6d6d6;
+  }
+  .order-customer__name-field:-ms-input-placeholder {
+    color: #d6d6d6;
+  }
 
-  .order-customer__surname-field::-webkit-input-placeholder {opacity: 0.3;}
-  .order-customer__surname-field::-moz-placeholder          {opacity: 0.3;}
-  .order-customer__surname-field:-moz-placeholder           {opacity: 0.3;}
-  .order-customer__surname-field:-ms-input-placeholder      {opacity: 0.3;}
+  .order-customer__surname-field::-webkit-input-placeholder {
+    color: #d6d6d6;
+  }
+  .order-customer__surname-field::-moz-placeholder {
+    color: #d6d6d6;
+  }
+  .order-customer__surname-field:-moz-placeholder {
+    color: #d6d6d6;
+  }
+  .order-customer__surname-field:-ms-input-placeholder {
+    color: #d6d6d6;
+  }
 
-  .order-customer__fathername-field::-webkit-input-placeholder {opacity: 0.3;}
-  .order-customer__fathername-field::-moz-placeholder          {opacity: 0.3;}
-  .order-customer__fathername-field:-moz-placeholder           {opacity: 0.3;}
-  .order-customer__fathername-field:-ms-input-placeholder      {opacity: 0.3;}
+  .order-customer__fathername-field::-webkit-input-placeholder {
+    color: #d6d6d6;
+  }
+  .order-customer__fathername-field::-moz-placeholder {
+    color: #d6d6d6;
+  }
+  .order-customer__fathername-field:-moz-placeholder {
+    color: #d6d6d6;
+  }
+  .order-customer__fathername-field:-ms-input-placeholder {
+    color: #d6d6d6;
+  }
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: auto;
     margin: 0;
 
-    .order-customer__wrapper{
+    .order-customer__wrapper {
       width: 668px;
       padding-top: 44px;
       padding-bottom: 30px;
@@ -86,66 +110,78 @@
       align-items: flex-start;
     }
 
-    .order-customer__title{
+    .order-customer__title {
       margin-top: 22px;
-      &::after{
+      &::after {
         display: none;
       }
     }
-    .order-customer__content{
+
+    .order-customer__content {
       margin-left: 126px;
     }
-    .order-customer__name-field{
+
+    .order-customer__name-field {
       width: 394px;
       padding: 15px 16px;
       margin-left: 18px;
     }
-    .order-customer__surname-field{
+
+    .order-customer__surname-field {
       width: 342px;
       padding: 15px 16px;
       margin-left: 17px;
     }
-    .order-customer__fathername-field{
+
+    .order-customer__fathername-field {
       width: 344px;
       padding: 15px 16px;
       margin-left: 18px;
     }
+
     .order-customer__name-field, .order-customer__surname-field, .order-customer__fathername-field {
       font-size: 19px;
     }
-    .order-customer__name, .order-customer__surname, .order-customer__fathername{
+
+    .order-customer__name, .order-customer__surname, .order-customer__fathername {
       font-size: 19px;
     }
-    .order-customer__item{
+
+    .order-customer__item {
       margin-bottom: 19px;
     }
   }
 
-  @media (min-width: @desktop-width){
-    .order-customer__wrapper{
+  @media (min-width: @desktop-width) {
+    .order-customer__wrapper {
       width: 811px;
       padding-top: 46px;
       padding-left: 58px;
       padding-right: 175px;
     }
-    .order-customer__content{
+
+    .order-customer__content {
       margin-left: 72px;
     }
-    .order-customer__name-field{
+
+    .order-customer__name-field {
       width: 608px;
       margin-left: 20px;
       padding-right: 0;
     }
-    .order-customer__surname-field{
+
+    .order-customer__surname-field {
       width: 558px;
       padding-right: 0;
       margin-left: 20px;
     }
-    .order-customer__fathername-field{
+
+    .order-customer__fathername-field {
       width: 542px;
       margin-left: 22px;
     }
-    .order-customer__item{
+
+    .order-customer__item {
       width: 700px;
       margin-bottom: 18px;
     }
