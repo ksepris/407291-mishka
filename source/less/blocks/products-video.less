@@ -1,9 +1,8 @@
-.products-video{
+.products-video {
   width: 320px;
   margin: 0 auto;
 
-
-  .products-video__wrapper{
+  .products-video__wrapper {
     width: 260px;
     margin: 0 auto;
     border: 1px solid @list-border-color;
@@ -11,7 +10,7 @@
     margin-bottom: 56px;
   }
 
-  .products-video__title{
+  .products-video__title {
     font-size: 17px;
     line-height: 24px;
     color: @dark-text-color;
@@ -21,7 +20,7 @@
     margin-top: 24px;
     margin-bottom: 24px;
     position: relative;
-    &::before{
+    &::before {
       content: '';
       position: absolute;
       top: 6px;
@@ -31,7 +30,7 @@
       background-image: url(../img/icon-video.svg);
     }
   }
-  .products-video__descr{
+  .products-video__descr {
     font-size: 13px;
     line-height: 24px;
     color: @light-text-color;
@@ -42,7 +41,7 @@
     margin-bottom: 25px;
     position: relative;
     z-index: 20;
-    &::after{
+    &::after {
       content: '';
       position: absolute;
       top: -26px;
@@ -52,18 +51,18 @@
       z-index: 10;
     }
   }
-  .products-video__descr:hover::after{
+  .products-video__descr:hover::after {
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
   }
-  .products-video__descr:active::after{
+  .products-video__descr:active::after {
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
   }
-  .products-video__make-order{
+  .products-video__make-order {
     width: 190px;
     margin: 0 auto;
     z-index: 20;
   }
-  .products-video__play-btn{
+  .products-video__play-btn {
     display: block;
     position: absolute;
     top: 24%;
@@ -74,53 +73,56 @@
     width: 102px;
     height: 77px;
   }
-  .products-video__play-btn:hover{
+  .products-video__play-btn:hover {
     width: 121px;
     height: 92px;
     background-size: 100%;
   }
-  .products-video__play-btn:active{
+  .products-video__play-btn:active {
     width: 81px;
     height: 62px;
     opacity: 0.3;
   }
-  .products-video__video-block{
+  .products-video__video-block {
     position: relative;
   }
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: auto;
     margin: 0;
     margin-bottom: 60px;
 
-    .products-video__wrapper{
+    .products-video__wrapper {
       width: 668px;
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
     }
-    .products-video__title{
+
+    .products-video__title {
       order: 2;
       font-size: 20px;
       padding-left: 106px;
       margin-top: 32px;
       margin-bottom: 12px;
-      &::before{
+      &::before {
         top: -3px;
         left: 42px;
       }
     }
-    .products-video__video{
+
+    .products-video__video {
       order: 1;
     }
-    .products-video__descr{
+
+    .products-video__descr {
       order: 3;
       font-size: 15px;
       line-height: 30px;
       margin-left: 40px;
       margin-bottom: 35px;
       width: 582px;
-      &::after{
+      &::after {
         top: -96px;
         left: -40px;
         width: 668px;
@@ -128,32 +130,36 @@
         z-index: 10;
       }
     }
-    .products-video__make-order{
+
+    .products-video__make-order {
       order: 4;
       width: 582px;
       margin-bottom: 12px;
     }
-    .products-video__play-btn{
+
+    .products-video__play-btn {
       top: 40%;
       left: 42%;
     }
   }
 
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     margin-bottom: 104px;
 
-    .products-video__wrapper{
+    .products-video__wrapper {
       width: 1050px;
       align-items: flex-start;
     }
-    .products-video__video{
+
+    .products-video__video {
       position: absolute;
     }
-    .products-video__descr{
+
+    .products-video__descr {
       width: 226px;
       margin-left: 760px;
       margin-bottom: 46px;
-      &::after{
+      &::after {
         top: -178px;
         left: -78px;
         width: 368px;
@@ -161,27 +167,30 @@
         z-index: 10;
       }
     }
-    .products-video__make-order{
+
+    .products-video__make-order {
       width: 230px;
       margin-left: 762px;
       margin-bottom: 70px;
     }
-    .products-video__title{
+
+    .products-video__title {
       margin-left: 654px;
       margin-top: 94px;
       margin-bottom: 12px;
       width: 160px;
-      &::before{
+      &::before {
         top: -54px;
         left: 108px;
       }
     }
-    .products-video__make-order{
+
+    .products-video__make-order {
       width: 226px;
       margin-bottom: 26px;
     }
 
-    .products-video__play-btn{
+    .products-video__play-btn {
       top: 188px;
       left: 290px;
     }

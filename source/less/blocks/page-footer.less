@@ -1,26 +1,26 @@
-.page-footer{
+.page-footer {
   background-color: @footer-background-color;
 
   width: 320px;
   margin: 0 auto;
   padding-bottom: 30px;
 
-  .page-footer__wrapper{
+  .page-footer__wrapper {
     width: 260px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
 
-  .page-footer__logo{
+  .page-footer__logo {
     display: none;
   }
-  .page-footer__social{
+  .page-footer__social {
     padding: 26px 30px;
     padding-bottom: 22px;
     margin-left: 26px;
   }
-  .page-footer__copyright{
+  .page-footer__copyright {
     margin: 0 auto;
     padding-top: 16px;
     padding-left: 38px;
@@ -28,57 +28,62 @@
     border-top: 1px solid #e5e5e5;
   }
 
-
-
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: auto;
     margin: 0;
     padding-top: 40px;
 
-    .page-footer__wrapper{
+    .page-footer__wrapper {
       width: 668px;
       margin: 0 auto;
       flex-direction: row;
       align-items: flex-start;
     }
-    .page-footer__logo{
+
+    .page-footer__logo {
       display: block;
       margin-top: 12px;
       width: 102px;
       height: 34px;
     }
-    .page-footer__logo-image{
+
+    .page-footer__logo-image {
       width: 102px;
       height: 34px;
       fill: @logo-footer-color;
     }
-    .page-footer__logo-image:hover{
+
+    .page-footer__logo-image:hover {
       fill: @footer-icon-color-hover;
     }
-    .page-footer__logo-image:active{
+
+    .page-footer__logo-image:active {
       opacity: 0.3;
     }
-    .page-footer__copyright{
+
+    .page-footer__copyright {
       margin-top: 12px;
       margin-left: 16px;
       padding-top: 0px;
       border: none;
     }
-    .page-footer__social{
+
+    .page-footer__social {
       margin-left: 130px;
       padding-top: 20px;
 
     }
   }
-  @media (min-width: @desktop-width){
-    .page-footer__wrapper{
+  @media (min-width: @desktop-width) {
+    .page-footer__wrapper {
       width: 1050px;
     }
 
-    .page-footer__social{
+    .page-footer__social {
       margin-left: 320px;
     }
-    .page-footer__copyright{
+
+    .page-footer__copyright {
       margin-top: 14px;
       margin-left: 206px;
     }

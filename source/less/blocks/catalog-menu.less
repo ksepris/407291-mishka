@@ -1,8 +1,8 @@
-.catalog-menu{
+.catalog-menu {
   display: flex;
   flex-direction: column;
 
-  .catalog-menu__item{
+  .catalog-menu__item {
     position: relative;
     font-size: 19px;
     line-height: 24px;
@@ -12,15 +12,16 @@
     text-decoration: none;
     display: block;
     padding: 28px 28px;
-    &::after{
+
+    &::after {
       content: '';
       position: absolute;
     }
   }
 
-  .catalog-menu__item--interior{
+  .catalog-menu__item--interior {
     background-color: @catalog-interior-color;
-    &::after{
+    &::after {
       top: 22px;
       right: 36px;
       width: 40px;
@@ -29,21 +30,21 @@
       opacity: 0.5;
     }
   }
-  .catalog-menu__item--interior:hover{
+  .catalog-menu__item--interior:hover {
     background-color: @catalog-interior-color-hover;
-    &::after{
+    &::after {
       opacity: 0.7;
     }
   }
-  .catalog-menu__item--interior:active{
+  .catalog-menu__item--interior:active {
     color: rgba(255, 255, 255, 0.3);
-    &::after{
+    &::after {
       opacity: 0.3;
     }
   }
-  .catalog-menu__item--toys{
+  .catalog-menu__item--toys {
     background-color: @catalog-toys-color;
-    &::after{
+    &::after {
       top: 22px;
       right: 27px;
       width: 60px;
@@ -51,48 +52,49 @@
       background-image: url(../img/icon-toy.svg);
     }
   }
-  .catalog-menu__item--toys:hover{
+  .catalog-menu__item--toys:hover {
     background-color: @catalog-toys-color-hover;
-    &::after{
+    &::after {
       opacity: 0.7;
     }
   }
-  .catalog-menu__item--toys:active{
+  .catalog-menu__item--toys:active {
     color: rgba(255, 255, 255, 0.3);
-    &::after{
+    &::after {
       opacity: 0.3;
     }
   }
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: 668px;
     flex-direction: row;
     align-items: flex-start;
 
-    .catalog-menu__item{
+    .catalog-menu__item {
       font-size: 20px;
       line-height: 30px;
-      padding: 29px 0px;
+      padding: 29px 0 42px;
       padding-left: 36px;
       width: 298px;
     }
 
-    .catalog-menu__item--interior{
-      &::after{
+    .catalog-menu__item--interior {
+      &::after {
         top: 30px;
       }
     }
-    .catalog-menu__item--toys{
-      &::after{
+
+    .catalog-menu__item--toys {
+      &::after {
         top: 32px;
         right: 34px;
       }
     }
   }
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     width: 1050px;
 
-    .catalog-menu__item{
+    .catalog-menu__item {
       width: 489px;
     }
   }

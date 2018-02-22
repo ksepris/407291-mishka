@@ -1,24 +1,24 @@
-.products-catalog{
+.products-catalog {
   width: 320px;
   margin: 0 auto;
   padding-top: 28px;
   font-size: 0;
   line-height: 0;
 
-  .products-catalog__wrapper{
+  .products-catalog__wrapper {
     width: 260px;
     margin: 0 auto;
   }
 
-  .products-catalog__descr h1{
+  .products-catalog__descr h1 {
     margin: 0;
     padding: 0;
   }
-  .products-catalog__descr{
+  .products-catalog__descr {
     padding: 26px 26px;
     border: 1px solid @list-border-color;
   }
-  .products-catalog__price-block{
+  .products-catalog__price-block {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -26,14 +26,14 @@
     padding-top: 22px;
     margin-top: 18px;
   }
-  .products-catalog__price{
+  .products-catalog__price {
     font-size: 15px;
     line-height: 24px;
     color: @dark-text-color;
     font-weight: bold;
     font-family: 'Open Sans', 'Arial', sans-serif;
   }
-  .products-catalog__name{
+  .products-catalog__name {
     font-size: 17px;
     line-height: 24px;
     color: @dark-text-color;
@@ -43,13 +43,13 @@
     display: block;
     width: 200px;
   }
-  .products-catalog__name:hover{
+  .products-catalog__name:hover {
     opacity: 0.6;
   }
-  .products-catalog__name:active{
+  .products-catalog__name:active {
     opacity: 0.3;
   }
-  .products-catalog__feautures{
+  .products-catalog__feautures {
     font-size: 13px;
     line-height: 30px;
     color: @light-text-color;
@@ -58,66 +58,72 @@
     margin-top: 6px;
   }
 
-  .products-catalog__basket-icon{
+  .products-catalog__basket-icon {
     opacity: 0.2;
   }
-  .products-catalog__basket-icon:hover{
+  .products-catalog__basket-icon:hover {
     opacity: 1.0;
     fill: #63d1bb;
   }
-  .products-catalog__basket-icon:active{
+  .products-catalog__basket-icon:active {
     opacity: 0.3;
   }
 
-  .products-catalog__item{
+  .products-catalog__item {
     margin-bottom: 31px;
   }
-  .products-catalog__descr:hover{
+  .products-catalog__descr:hover {
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
   }
-  .products-catalog__descr:active{
+  .products-catalog__descr:active {
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
   }
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: auto;
     margin: 0;
     padding-top: 74px;
 
-    .products-catalog__descr{
+    .products-catalog__descr {
       padding: 24px 26px;
       margin-left: 0px;
       margin-top: 0px;
       width: 280px;
       position: relative;
     }
-    .products-catalog__wrapper{
+
+    .products-catalog__wrapper {
       width: 668px;
       margin: 0 auto;
     }
-    .products-catalog__item{
+
+    .products-catalog__item {
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 54px;
     }
-    .products-catalog__name{
+
+    .products-catalog__name {
       width: 240px;
       font-size: 20px;
       margin-left: 0px;
     }
-    .products-catalog__feautures{
+
+    .products-catalog__feautures {
       font-size: 15px;
       margin-left: 0px;
       margin-top: 6px;
     }
-    .products-catalog__price-block{
+
+    .products-catalog__price-block {
       width: 268px;
       margin-top: 0px;
       position: absolute;
       top: 258px;
       left: 32px;
     }
-    .products-catalog__price{
+
+    .products-catalog__price {
       width: 270px;
       margin-left: 0px;
       margin-top: 0px;
@@ -127,16 +133,16 @@
 
   }
 
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     padding-top: 132px;
 
-    .products-catalog__wrapper{
+    .products-catalog__wrapper {
       width: 1050px;
       display: flex;
       justify-content: space-between;
     }
 
-    .products-catalog__descr{
+    .products-catalog__descr {
       padding: 23px 25px;
       padding-bottom: 72px;
       margin-top: 0;
@@ -145,22 +151,26 @@
       box-sizing: border-box;
     }
 
-    .products-catalog__item{
+    .products-catalog__item {
       width: 316px;
       margin-bottom: 56px;
       flex-direction: column;
     }
-    .products-catalog__name{
+
+    .products-catalog__name {
       width: 240px;
     }
-    .products-catalog__feautures{
+
+    .products-catalog__feautures {
       margin-top: 8px;
     }
-    .products-catalog__price-block{
+
+    .products-catalog__price-block {
       width: 256px;
       top: 122px;
       left: 26px;
     }
+
     .products-catalog__item-wrapper {
       margin: 0;
       padding: 0;
